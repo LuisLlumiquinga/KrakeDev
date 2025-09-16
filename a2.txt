@@ -1,1 +1,7 @@
 Listo para me controlen en git
+
+Por fin me hacen caso
+
+estuve untracked mucho tiempo
+
+ahora estoy staged
