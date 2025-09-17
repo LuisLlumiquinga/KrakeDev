@@ -30,7 +30,6 @@ calcularValorTotal = function () {
 
     //5. Mostrar valorSubtotal en el componente lblSubtotal
     // Utilizar mostrarTexto
-    mostrarTexto("lblSubtotal", valorSubtotal);
         /*
         Caso de prueba: 
             - cantidad: 10
@@ -38,12 +37,12 @@ calcularValorTotal = function () {
             Subtotal esperado: 54
         Si el caso de prueba es exitoso, hacer un commit
      */
+    mostrarTexto("lblSubtotal", valorSubtotal);
 
     //6. Invocar a calcularValorDescuento y lo que devuelve guardar en la variable valorDescuento
     valorDescuento=calcularValorDescuento(valorSubtotal, porcentajeDescuento);
 
     //7. Mostrar el resultado en el componente lblDescuento
-    mostrarTexto("lblDescuento", valorDescuento);
     /*
         Caso de prueba: 
             - cantidad: 10 
@@ -52,8 +51,12 @@ calcularValorTotal = function () {
             - Descuento esperado: 5.4
         Si el caso de prueba es exitoso, hacer un commit
      */
+    mostrarTexto("lblDescuento", valorDescuento);
+
     //8. Invocar a calcularIVA y lo que devuelve guardar en la variable valorIVA
     // El IVA debe calcularse sobre el valor del subtotal menos el descuento
+    valorIVA=calcularIVA(valorSubtotal-valorDescuento);
+
     //9. Mostrar el resultado en el componente lblValorIVA    
         /*
             Caso de prueba: 
@@ -70,7 +73,11 @@ calcularValorTotal = function () {
 
             Si el caso de prueba es exitoso, hacer un commit
         */
+    mostrarTexto("lblValorIVA", valorIVA);
+
     //10. Invocar a calcularTotal y lo que devuelve guardar en la variable valorTotal
+    valorTotal=calcularTotal(valorSubtotal, valorDescuento, valorIVA);
+
     //11. Mostrar el resultado en el componente lblTotal
     /*
         Caso de prueba: 
@@ -86,7 +93,8 @@ calcularValorTotal = function () {
 
                 Si el caso de prueba es exitoso, hacer un commit
        */
-            
+    mostrarTexto("lblTotal", valorTotal);
+     
     //12. Mostrar un resumen en el componente lblResumen, si no existe debe agregarlo
     /*
         Ejemplo: 
