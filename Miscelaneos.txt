@@ -25,3 +25,5 @@ Para salir: Esc+":q"
 git push --> sube archivos a la nube
 
 git pull origin main --> actualiza desde la nube
+
+gf
