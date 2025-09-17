@@ -1,0 +1,27 @@
+Comandos de Bash
+pwd --> directorio
+cd --> change directory
+cd .. --> regresa directorio anterior
+clear --> limpia consola
+ls - lista carpetas del directorio actual
+
+git config --global user.name LuisLlumiquinga
+git config --global user.email lmllumiquinga3@espe.edu.ec
+
+git config --global --list
+
+git clone "url" --> clona el repositorio
+
+GIT HUB
+	Cuando se agrega un archivo al directorio de trabajo su estado es UNTRACKED
+
+git commit -m "mensaje" --> crea versiones
+git add "nombre.xx" --> agrega el archivo al directorio de trabajo
+git status --> estado de los repositorios
+git log --> general el historial
+
+Para salir: Esc+":q"
+
+git push --> sube archivos a la nube
+
+git pull origin main --> actualiza desde la nube
