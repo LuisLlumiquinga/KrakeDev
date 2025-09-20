@@ -1,0 +1,45 @@
+body{
+    background-image: url("fondo.jpg");
+    background-size: cover;
+}
+
+.contPrincipal{
+    margin-top: 300px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+h1{
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+
+.millas{
+    display: flex;
+    justify-content: center;
+}
+
+.mill{
+    text-align: center;
+
+}
+.resultado{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.press{
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: bold;
+    background-color: darkgrey;
+}
