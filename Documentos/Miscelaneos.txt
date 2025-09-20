@@ -26,4 +26,6 @@ git push --> sube archivos a la nube
 
 git pull origin main --> actualiza desde la nube
 
-gf
+****** java ******
+
+	.toFixed(2) --> controlar decimales
