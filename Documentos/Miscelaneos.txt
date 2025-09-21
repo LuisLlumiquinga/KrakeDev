@@ -29,3 +29,5 @@ git pull origin main --> actualiza desde la nube
 ****** java ******
 
 	.toFixed(2) --> controlar decimales
+	.length --> devuelve # de caracteras del string
+	. charCodeAt(2) --> saca codigo ASCI del caracterer
