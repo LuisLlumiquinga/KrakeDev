@@ -69,3 +69,39 @@ obtenerProvincia=function(placa){
         return null;
     }
 }
+
+obtenerDiaPicoYPlaca=function(placa){
+    let ultimoDigito;
+    
+    ultimoDigito=placa.charCodeAt(placa.length-1);
+    
+    if(ultimoDigito==49 || ultimoDigito==50){
+        return "Lunes";
+    }
+
+    if(ultimoDigito==51 || ultimoDigito==52){
+        return "Martes";
+    }
+
+    if(ultimoDigito==53 || ultimoDigito==54){
+        return "Miercoles";
+    }
+
+    if(ultimoDigito==55 || ultimoDigito==56){
+        return "Jueves";
+    }
+
+    if(ultimoDigito==57 || ultimoDigito==48){
+        return "Viernes";
+    }
+}
+
+limpiar=function(){
+    mostrarTextoEnCaja("txtPlaca", "");
+    mostrarTexto("lblPlacaValida", "");
+    mostrarTexto("lblMensajePicoPlaca", "");
+    mostrarTexto("lblPicoPlaca", "");
+    mostrarTexto("lblMensajeProvincia", "");
+    mostrarTexto("lblProvincia", "");
+    mostrarTexto("lblErrores", "");
+}

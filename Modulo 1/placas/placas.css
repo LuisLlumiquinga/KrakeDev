@@ -12,17 +12,9 @@ body{
     margin-right:0px;
     flex-direction: row;
     margin-top: 100px;
+    overflow: hidden;
 
 }
-
-.contenido{
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .titulo{
     display: flex;
     flex-direction: row;
@@ -31,15 +23,21 @@ body{
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .logoEscuela{
     display: flex;
-    flex:1;
+    flex:2;
     justify-content: center;
     align-items: center;
-    
 }
-
+.areaResultado{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-top: 20px;
+}
 .imagen{
     display: flex;
     flex:1;
@@ -47,45 +45,6 @@ body{
     align-items: center;
   
 }
-
-.ingresoDatos{
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.tituloCampo{
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    margin-right: 20px;
-}
-
-.cajaTexto{
-    border-radius: 4px;
-    border-color: #4CAF50;
-    
-    font-size: 20px;
-    color:rgb(85, 83, 83);
-}
-
-.botones{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.contenedorBoton{
-    display: flex;
-    flex:1;
-    justify-content: center;
-}
-
 .estiloBoton{
     background-color: #4CAF50; 
     border: none;
@@ -94,9 +53,9 @@ body{
     text-align: center;
     font-size: 16px;
     border-radius: 5px;
+    width: 100%;
 
 }
-
 .estiloBoton:hover {
     background-color:white; 
     color: #4CAF50;
@@ -104,7 +63,6 @@ body{
     border-color: #4CAF50;
     border-radius: 5px;
 }
-
 .estiloBoton:active{
     background-color: #4CAF50; 
     border: none;
@@ -113,10 +71,73 @@ body{
     text-align: center;
     font-size: 16px;
     border-radius: 5px;
+
+}
+.botones{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contenedorBoton{
+    display: flex;
+    justify-content: center;
+    width: 110px;
+}
+.cajaTexto{
+    border-radius: 4px;
+    border-color: #4CAF50;
+    
+    font-size: 20px;
+    color:rgb(85, 83, 83);
+}
+.ingresoDatos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.error{
-    color:rgb(116, 40, 40);
-    font-style: italic;
+.tituloCampo {
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
     font-size: 20px;
+}
+
+.resultado{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    width: 200px;
+    text-align: right;
+}
+
+.imagenResultado{
+    display: flex;
+    flex:6;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.error{
+    color:rgb(163, 52, 52);
+    font-style: italic;
+    font-size: 16px;
+}
+.contenido{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloMensaje{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
