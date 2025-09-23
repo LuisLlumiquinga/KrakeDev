@@ -29,7 +29,11 @@ jugar=function(seleccionado){
 
     if(puntosUsuarios==5){
         mostrarTexto("lblResultadoPartida", "HAS GANADO EL JUEGO!!");
+        puntosUsuarios=0;
+        puntosComputador=0;
     }else if(puntosComputador==5){
         mostrarTexto("lblResultadoPartida", "EL COMPUTADOR TE HA VENCIDO!!");
+        puntosUsuarios=0;
+        puntosComputador=0;
     }
 }
