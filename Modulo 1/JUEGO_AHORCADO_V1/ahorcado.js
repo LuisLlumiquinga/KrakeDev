@@ -54,3 +54,14 @@ mostrarLetra=function(letra, posicion){
         mostraTexto("div4", letra);
     }
 }
+
+validar=function(letra){
+    let letrasEncontradas=0;
+
+    for(let i=0; i<=palabraSecreta.length; i++){
+        if(palabraSecreta.charAt(i)==letra){
+            mostrarLetra(letra, i);
+            letrasEncontradas++;
+        }
+    }
+}
