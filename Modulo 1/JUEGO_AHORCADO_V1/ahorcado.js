@@ -35,23 +35,23 @@ guardarPalabra = function () {
 
 mostrarLetra=function(letra, posicion){
     if(posicion==0){
-        mostraTexto("div0", letra);
+        mostrarTexto("div0", letra);
     }
 
     if(posicion==1){
-        mostraTexto("div1", letra);
+        mostrarTexto("div1", letra);
     }
 
     if(posicion==2){
-        mostraTexto("div2", letra);
+        mostrarTexto("div2", letra);
     }
 
     if(posicion==3){
-        mostraTexto("div3", letra);
+        mostrarTexto("div3", letra);
     }
 
     if(posicion==4){
-        mostraTexto("div4", letra);
+        mostrarTexto("div4", letra);
     }
 }
 
@@ -65,3 +65,16 @@ validar=function(letra){
         }
     }
 }
+
+ingresarLetra=function(){
+    let letra;
+
+    letra=recuperarTexto("txtLetra");
+
+    if(esMayuscula(letra.charCodeAt(0))){
+        validar(letra);
+    }else{
+        alert("SOLO SE ACEPTAN LETRAS MAYUSCULAS");
+    }
+}
+
