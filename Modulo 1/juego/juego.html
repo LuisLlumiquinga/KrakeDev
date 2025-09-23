@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUEGO</title>
+    <link rel="stylesheet" href="juego.css">
+    <script src="serviciosJuego.js"></script>
+    <script src="utilitarios.js"></script>
+    <script src="juego.js"></script>
+</head>
+
+<body>
+    <div class="principal">
+        <div class="logoEscuela">
+            <img src="./imagenes/logoKrakeDev.png" width="80%">
+        </div>
+
+        <div class="contenido">
+            <div class="titulo">
+                PIEDRA, PAPEL O TIJERA
+            </div>
+
+            <div class="ingresoDatos">
+                <img src="./imagenes/piedra.png" class="imagen" onclick="jugar('piedra');">
+                <img src="./imagenes/papel.png" class="imagen" onclick="jugar('papel');">
+                <img src="./imagenes/tijera.png" class="imagen" onclick="jugar('tijera');">
+            </div>
+
+            <div class="ingresoDatos">
+                <h3>SELECCION USUARIO</h3>
+                <img src="" class="imagen" id="imgUsuario">
+            </div>
+            
+            <div class="ingresoDatos">
+                <h3>SELECCION COMPUTADOR</h3>
+                <img src="" class="imagen" id="imgComputador">
+            </div>
+
+            <div class="botones">
+                <div class="contenedorBoton">
+                    <input type="button" class="estiloBoton" value="NUEVA PARTIDA" onclick="limpiar();">
+                </div>
+            </div>
+        </div>
+
+        <div class="areaResultado">
+            <div class="resultadoFinal">
+                <div id="lblResultadoPartida"></div>
+            </div>
+
+            <div class="resultado">
+                <div>Puntos Usuario: </div>
+                <div id="lblPuntosUsuario">0</div>
+            </div>            
+
+            <div class="resultado">
+                <div>Puntos Computador: </div>
+                <div id="lblPuntosComputador">0</div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
