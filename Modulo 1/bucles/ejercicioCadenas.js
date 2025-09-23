@@ -39,3 +39,37 @@ invertirCadena=function(cadena){
 
     mostrarTexto("lblCadena", resultado);
 }
+
+buscarLetra=function(cadena, letra){
+    let letraIterada;
+    let existeLetra=false;
+
+    for(let i=0; i<cadena.length; i++){
+        letraIterada=cadena.charAt(i);
+
+        if(letraIterada==letra){
+            existeLetra=true;
+        }
+    }
+
+    if(existeLetra==true){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+contarMayuscula=function(cadena){
+    let letra;
+    let contadorMayusculas;
+
+    for(let i=0; i<cadena.length; i++){
+        letra=cadena.charAt(i);
+
+        if(esMayuscula(letra)){
+            contadorMayusculas++;
+        }
+    }
+
+    console.log("Tengo "+contadorMayusculas+" letras mayusculas");
+}
