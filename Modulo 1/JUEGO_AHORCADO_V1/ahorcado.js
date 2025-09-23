@@ -33,6 +33,24 @@ guardarPalabra = function () {
   }
 };
 
-mostrarLetra=function(){
-    
+mostrarLetra=function(letra, posicion){
+    if(posicion==0){
+        mostraTexto("div0", letra);
+    }
+
+    if(posicion==1){
+        mostraTexto("div1", letra);
+    }
+
+    if(posicion==2){
+        mostraTexto("div2", letra);
+    }
+
+    if(posicion==3){
+        mostraTexto("div3", letra);
+    }
+
+    if(posicion==4){
+        mostraTexto("div4", letra);
+    }
 }
