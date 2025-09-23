@@ -12,7 +12,6 @@ esMayuscula = function (caracter) {
 guardarPalabra = function () {
   let palabra;
   let cont = 0;
-  let mayuscula = false;
 
   palabra = recuperarTexto("txtSecreta");
 
@@ -33,3 +32,7 @@ guardarPalabra = function () {
     alert("DEBE INGRESAR UNA PALABRA DE 5 LETRAS MAYUSCULAS");
   }
 };
+
+mostrarLetra=function(){
+    
+}
