@@ -31,7 +31,9 @@ git pull origin main --> actualiza desde la nube
 	.toFixed(2) --> controlar decimales
 	.length --> devuelve # de caracteras del string
 	.charCodeAt(2) --> saca codigo ASCI del caracterer
+	.charAt(0) --> saca la letra en la posicion dada
 	isNaN(nota1) --> para validar NaN
+	.push(valor) --> agrega elemenos a la cadena de caracteres
 	alt + shif + F --> ordena la tabulacion del codigo escrito
 
 *** poner pausa ***	
