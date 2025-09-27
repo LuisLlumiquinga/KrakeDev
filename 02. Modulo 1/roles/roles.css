@@ -79,27 +79,37 @@ body{
     justify-content: center;
 }
 tbody tr:nth-child(odd) {
-    background-color: #908efc;
+    background-color: #217023;
   }
   
   tbody tr:nth-child(even) {
-    background-color: #6a51cf;
+    background-color: #5ca15e9a;
   }
   
   tbody tr {
     background-image: url(noise.png);
   }
+
+  table, th, td {
+    border: 1px solid #ffffff;
+  }
   
   table {
-    background-color: #0b0c0c;
+    background-color: #217023;
     width: 100%;
   }
+  
+  tr:hover {
+    background-color: whitesmoke !important;
+  }
+
   td{
     text-align: center;
   }
   .areaTabla{
     margin-top: 20px;
   }
+
 .estiloBoton:hover {
     background-color:white; 
     color: #217023;
