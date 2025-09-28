@@ -229,3 +229,41 @@ buscarRol=function(){
         mostrarTexto("infoSueldo", empleadoEncontrado.sueldo);
     }
 }
+
+calcularAporteEmpleado=function(sueldo){
+    let aporte;
+
+    aporte=sueldo*0.0945;
+
+    return aporte;
+}
+
+calcularValorAPagar=function(sueldo, aporteIESS, descuento){
+    let valorAPagar;
+
+    valorAPagar=sueldo-aporteIESS-descuento;
+
+    return valorAPagar;
+}
+
+calcularRol=function(){
+    let sueldo;
+    let descuento;
+    let aporte;
+    let valorAPagar;
+
+    sueldo=recuperarTextoDiv("infoSueldo");
+    descuento=recuperarFloat("txtDescuentos");
+
+    if (isNaN(descuento) || descuento<=0 || descuento>=sueldo) {
+        mostrarTexto("lblErrorDescuentos", "El descuento deben ser un valor entre 0 y " + sueldo);
+    } else {
+        mostrarTexto("lblErrorDescuentos", ""); // Limpiar mensaje de error
+        
+        aporte=calcularAporteEmpleado(sueldo);
+        mostrarTexto("infoIESS", aporte);
+
+        valorAPagar=calcularValorAPagar(sueldo, aporte, descuento);
+        mostrarTexto("infoPago", valorAPagar);
+    }
+}
