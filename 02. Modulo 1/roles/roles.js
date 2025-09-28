@@ -42,6 +42,7 @@ mostrarOpcionRol=function(){
     ocultarComponente("divEmpleado");
     ocultarComponente("divResumen");
     deshabilitarComponente("btnGuardarRol");
+    mostrarRoles();
 }
 
 mostrarOpcionResumen=function(){
@@ -322,3 +323,42 @@ guardarRol=function(){
     deshabilitarComponente("btnGuardarRol");
 }
 
+mostrarRoles=function(){
+    let cmpTabla=document.getElementById("tablaResumen");
+    let contenidoTabla="<table><tr>"+
+    "<th>CEDULA</th>"+
+    "<th>NOMBRE</th>"+
+    "<th>VALOR A PAGAR</th>"+
+    "<th>APORTE EMPLEADO</th>"+
+    "<th>APORTE EMPLEADOR</th>"+
+    "</tr>";
+    for(let i=0; i<roles.length; i++){
+        elementoRoles=roles[i];
+        contenidoTabla+="<tr><td>"+elementoRoles.cedula+"</td>"
+        +"<td>"+elementoRoles.nombre+"</td>"
+        +"<td>"+elementoRoles.totalPagar+"</td>"
+        +"<td>"+elementoRoles.aporteIESS+"</td>"
+        +"<td>"+elementoRoles.aporteEmpleador+"</td>"
+        +"</tr>"
+    }
+    contenidoTabla+="</table>"
+    cmpTabla.innerHTML=contenidoTabla;
+
+    mostrarTotales();
+}
+
+mostrarTotales=function(){
+    let totalEmpleado=0;
+    let totalEmpleador=0;
+    let totalAPagar=0;
+
+    for(let i=0; i<roles.length; i++){
+        totalEmpleado+=parseFloat(roles[i].aporteIESS);
+        totalEmpleador+=parseFloat(roles[i].aporteEmpleador);
+        totalAPagar+=parseFloat(roles[i].totalPagar);
+    }
+
+    mostrarTexto("infoTotalPago", totalAPagar);
+    mostrarTexto("infoAporteEmpresa", totalEmpleador);
+    mostrarTexto("infoAporteEmpleado", totalEmpleado);
+}
