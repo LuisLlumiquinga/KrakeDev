@@ -1,10 +1,12 @@
 let empleados = [
     {cedula:"1714616123",nombre:"John",apellido:"Cena",sueldo:500.0},
-    {cedula:"0914632123",nombre:"Luisa",apellido:"Gonzalez",sueldo:900.0},
-    {cedula:"0101145457",nombre:"Joselyne",apellido:"Morales",sueldo:800.0}
+    {cedula:"9014632123",nombre:"Luisa",apellido:"Gonzalez",sueldo:900.0},
+    {cedula:"1001145457",nombre:"Joselyne",apellido:"Morales",sueldo:800.0}
 ]
 
 let esNuevo=false;
+
+let roles=[];
 
 mostrarEmpleados=function(){
     let cmpTabla=document.getElementById("tablaEmpleados");
@@ -39,6 +41,7 @@ mostrarOpcionRol=function(){
     mostrarComponente("divRol");
     ocultarComponente("divEmpleado");
     ocultarComponente("divResumen");
+    deshabilitarComponente("btnGuardarRol");
 }
 
 mostrarOpcionResumen=function(){
@@ -265,5 +268,57 @@ calcularRol=function(){
 
         valorAPagar=calcularValorAPagar(sueldo, aporte, descuento);
         mostrarTexto("infoPago", valorAPagar);
+
+        habilitarComponente("btnGuardarRol");
     }
 }
+
+buscaRol=function(cedula){
+    let rolEncontrado=null;
+    for(let i=0; i<=roles.length-1; i++){
+        if(roles[i].cedula==cedula){
+            rolEncontrado=roles[i]
+        }
+    }
+    return rolEncontrado
+}
+
+agregarRol=function(rol){
+    let rolEncontrado;
+
+    rolEncontrado=buscaRol(rol.cedula);
+
+    if(rolEncontrado!=null){
+        alert("ESTE ROL YA SE ENCUENTRA EN LA BASE DE DATOS");
+    }else{
+        roles.push(rol);
+        alert("ROL AGREGADO CON EXITO");
+    }
+}
+
+calcularAporteEmpleador=function(sueldo){
+    return aporteEmpleador=aporteEmpleador=sueldo*0.01115
+}
+
+guardarRol=function(){
+    let infoIESS=recuperarTextoDiv("infoIESS");
+    let infoPago=recuperarTextoDiv("infoPago");
+    let infoNombre=recuperarTextoDiv("infoNombre");
+    let infoCedula=recuperarTextoDiv("infoCedula");
+    let infoSueldo=recuperarTextoDiv("infoSueldo");
+
+    let aporteEmpleador=calcularAporteEmpleador(infoSueldo);
+
+    let rol=[];
+
+    rol.aporteIESS=infoIESS;
+    rol.totalPagar=infoPago;
+    rol.nombre=infoNombre;
+    rol.cedula=infoCedula;
+    rol.sueldo=infoSueldo;
+    rol.aporteEmpleador=aporteEmpleador;
+
+    agregarRol(rol);
+    deshabilitarComponente("btnGuardarRol");
+}
+
