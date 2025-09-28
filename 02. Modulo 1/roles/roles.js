@@ -212,3 +212,20 @@ limpiar=function(){
     esNuevo=false;
     deshabilitarTodo();
 }
+
+buscarRol=function(){
+    let cedulaEmpleado;
+    let empleadoEncontrado;
+
+    cedulaEmpleado=recuperarTexto("txtBusquedaCedulaRol");
+
+    empleadoEncontrado=buscarEmpleado(cedulaEmpleado);
+
+    if(empleadoEncontrado===null){
+        alert("EMPLEADO NO EXISTE")
+    }else{
+        mostrarTexto("infoCedula", empleadoEncontrado.cedula);
+        mostrarTexto("infoNombre", empleadoEncontrado.nombre+" "+empleadoEncontrado.apellido)
+        mostrarTexto("infoSueldo", empleadoEncontrado.sueldo);
+    }
+}
