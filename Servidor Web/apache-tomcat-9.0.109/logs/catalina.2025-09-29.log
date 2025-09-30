@@ -139,3 +139,8 @@
 29-Sep-2025 15:21:37.528 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\DGAC\Documents\Programacion_Luis\KrakeDev\modulo 3\apache-tomcat-9.0.109\webapps\ROOT] has finished in [50] ms
 29-Sep-2025 15:21:37.534 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 29-Sep-2025 15:21:37.638 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [3935] milliseconds
+29-Sep-2025 15:55:20.204 INFORMACIÓN [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+29-Sep-2025 15:55:21.048 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Sep-2025 15:55:22.396 INFORMACIÓN [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+29-Sep-2025 15:55:24.074 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Sep-2025 15:55:24.288 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

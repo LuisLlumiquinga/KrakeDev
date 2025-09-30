@@ -78,3 +78,15 @@
 0:0:0:0:0:0:0:1 - - [29/Sep/2025:15:21:51 -0500] "GET /krakeDev/limon/images/fevicon.png HTTP/1.1" 404 733
 0:0:0:0:0:0:0:1 - - [29/Sep/2025:15:21:53 -0500] "GET /krakeDev/limon/gallery.html HTTP/1.1" 200 11346
 0:0:0:0:0:0:0:1 - - [29/Sep/2025:15:21:53 -0500] "GET /krakeDev/limon/css/swiper.min.css HTTP/1.1" 404 733
+0:0:0:0:0:0:0:1 - - [29/Sep/2025:15:49:20 -0500] "GET /krakeDev/limon/gallery.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/Sep/2025:15:49:33 -0500] "GET /krakeDev/limon/css/swiper.min.css HTTP/1.1" 404 733
+0:0:0:0:0:0:0:1 - - [29/Sep/2025:15:51:25 -0500] "GET /krakeDev/limon/index.html HTTP/1.1" 200 33137
+0:0:0:0:0:0:0:1 - - [29/Sep/2025:15:51:26 -0500] "GET /krakeDev/limon/css/swiper.min.css HTTP/1.1" 404 733
+0:0:0:0:0:0:0:1 - - [29/Sep/2025:15:53:02 -0500] "GET /krakeDev/limon/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/Sep/2025:15:53:02 -0500] "GET /krakeDev/limon/css/swiper.min.css HTTP/1.1" 404 733
+0:0:0:0:0:0:0:1 - - [29/Sep/2025:15:53:05 -0500] "GET /krakeDev/limon/about.html HTTP/1.1" 200 9777
+0:0:0:0:0:0:0:1 - - [29/Sep/2025:15:53:05 -0500] "GET /krakeDev/limon/css/swiper.min.css HTTP/1.1" 404 733
+0:0:0:0:0:0:0:1 - - [29/Sep/2025:15:53:08 -0500] "GET /krakeDev/limon/service.html HTTP/1.1" 200 9777
+0:0:0:0:0:0:0:1 - - [29/Sep/2025:15:53:09 -0500] "GET /krakeDev/limon/css/swiper.min.css HTTP/1.1" 404 733
+0:0:0:0:0:0:0:1 - - [29/Sep/2025:15:53:09 -0500] "GET /krakeDev/limon/service.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/Sep/2025:15:53:13 -0500] "GET /krakeDev/limon/css/swiper.min.css HTTP/1.1" 404 733
