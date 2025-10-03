@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="orden.css" />
+    <script src="orden.js"></script>
+    <script src="utilitarios.js"></script>
+</head>
+
+<body onload="mostrarNombre();">
+    <div class="principal">
+        <div class="logoEscuela">
+            <img src="./imagenes/logoKrakeDev.png" width="80%" />
+        </div>
+
+        <div class="contenido">
+            <div class="titulo">
+                EVALUACION INDIVIDUAL
+            </div>
+
+            <div class="ingresoDatos">
+                <div class="tituloCampo">
+                    NOMBRE
+                </div>
+                <div>
+                    <input type="text" class="cajaTexto" id="txtNombre"/>
+                    <div class="error" id="lblError1"></div>
+                </div>
+            </div>
+           
+            <div class="ingresoDatos">
+                <div class="tituloCampo">
+                    EDAD
+                </div>
+                <div>
+                    <input type="text" class="cajaTexto" id="txtEdad"/>
+                    <div class="error" id="lblError2"></div>
+                </div>
+            </div>
+            
+            <div class="botones">
+                <div class="contenedorBoton">
+                    <input type="button" value="GUARDAR"
+                     class="estiloBoton" onclick="agregarPersona();" />
+                </div>
+
+                <div class="contenedorBoton">
+                    <input type="button" value="ENCONTRAR MAYOR"
+                     class="estiloBoton" onclick="determinarMayor();" />
+                </div>
+
+                <div class="contenedorBoton">
+                    <input type="button" value="ENCONTRAR MENOR"
+                     class="estiloBoton" onclick="determinarMenor();" />
+                </div>
+            </div>
+
+            <div id="tablaNombre" class="areaTabla">
+
+            </div>
+        </div>
+        <div class="areaResultado">
+            <div class="resultado">
+                <div id="lblPersona"></div>
+                <div id="lblResultado"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
