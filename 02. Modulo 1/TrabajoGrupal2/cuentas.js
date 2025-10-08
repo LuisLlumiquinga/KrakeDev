@@ -43,11 +43,10 @@ buscarCuenta=function(numeroCuenta){
     for(let i=0; i<cuentas.length; i++){
         if(cuentas[i].numeroCuenta==numeroCuenta){
             cuentaEncontrada=cuentas[i];
-            return cuentaEncontrada;
-        }else{
-            return cuentaEncontrada;
         }
     }
+
+    return cuentaEncontrada;
 }
 
 /*
