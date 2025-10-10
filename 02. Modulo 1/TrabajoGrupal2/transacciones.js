@@ -21,13 +21,11 @@ buscarCuenta=function(numeroCuenta){
 
     for(let i=0; i<cuentas.length; i++){
         if(numeroCuenta==cuentas[i].numeroCuenta){
-            cuentaEncontrada=cuentas[i];
-            return cuentaEncontrada;
-        }else{
-            return cuentaEncontrada;
+            cuentaEncontrada=cuentas[i];            
         }
     }
 
+    return cuentaEncontrada;
 }
 
 //toma el numero de cuenta de la caja de texto

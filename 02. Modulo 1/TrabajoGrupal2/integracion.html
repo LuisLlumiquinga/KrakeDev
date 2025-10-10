@@ -15,8 +15,8 @@
             </div>
             <div class="contenedorBotones">
                 <input type="button" value="CUENTAS" class="boton" onclick="cargarCuentas();"/>
-                <input type="button" value="TRANSACCIONES" class="boton" />
-                <input type="button" value="MOVIMIENTOS" class="boton" />
+                <input type="button" value="TRANSACCIONES" class="boton" onclick="cargarTransacciones();"/>
+                <input type="button" value="MOVIMIENTOS" class="boton" onclick="cargarMovimientos();"/>
             </div>
             <div class="contenedorInfoGrupo">
                 <div>INTEGRANTE 1</div>
@@ -61,50 +61,53 @@
             </div>
 
         </div>
+        
         <div class="contenido" id="divTransacciones">
             <div class="superior">
                 <div class="titulo">TRANSACCIONES</div>
                 <div class="contenedorTexto">
-                    <div class="etiquetaTexto">CAMPO 1</div>
+                    <div class="etiquetaTexto">Numero de Cuenta</div>
                     <div class="cajaTexto">
-                        <input type="text" class="caja" />
+                        <input type="text" class="caja" id="txtCuentaNumero"/>
                     </div>
                 </div>
                 <div class="contenedorAcciones">
-                    <input type="button" value="BUSCAR" />
+                    <input type="button" value="BUSCAR" onclick="ejecutarBusqueda();"/>
                 </div>
                 <div class="contenedorTexto">
-                    <div class="etiquetaTexto">CAMPO 2</div>
+                    <div class="etiquetaTexto">Dinero</div>
                     <div class="cajaTexto">
-                        <input type="text" class="caja" />
+                        <input type="text" class="caja" id="txtMonto" />
                     </div>
                 </div>
                 <div class="contenedorAcciones">
-                    <input type="button" value="DEPOSITAR" />
-                    <input type="button" value="RETIRAR" />
+                    <input type="button" value="DEPOSITAR" id="btnDepositar" onclick="ejecutarDeposito();"/>
+                    <input type="button" value="RETIRAR" id="btnRetirar" onclick="ejecutarRetiro();"/>                    
+                </div>
+
+                <div class="inferior" id="tablaCuentaBuscada">
                     
                 </div>
-              
             </div>
         </div>
+        
         <div class="contenido" id="divMovimientos">
           
             <div class="inferior">
                 <div class="titulo">MOVIMIENTOS</div>
                 <div class="contenedorTexto">
-                    <div class="etiquetaTexto">CAMPO 1</div>
+                    <div class="etiquetaTexto">NUMERO DE CUENTA</div>
                     <div class="cajaTexto">
-                        <input type="text" class="caja" />
+                        <input type="text" class="caja" id="txtCuentaMovimientos"/>
                     </div>
                 </div>
                 <div class="contenedorAcciones">
-                    <input type="button" value="BUSCAR" />                    
+                    <input type="button" value="VER MOVIMIENTOS" onclick="buscarMovimientos();"/>                    
                 </div>
                 <div id="tablaMovimientos">
-                    TABLA
+                    
                 </div>
             </div>
-
         </div>
     </div>
 </body>
