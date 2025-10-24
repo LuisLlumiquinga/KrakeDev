@@ -95,34 +95,14 @@ function sonMayusculas(palabra) {
   return true;
 }
 
-esMayuscula=function(caracter){
-    if(caracter>=65 && caracter<=90){
-        return true;
-    }else{
-        return false;
-    }
-}
-
-esDigito=function(caracter){
-    if(caracter>=48 && caracter<=57){
-        return true;
-    }else{
-        return false;
-    }
-}
-
-esGuion=function(caracter){
-    if(caracter==45){
-        return true;
-    }else{
-        return false;
-    }
-}
-
-esMinus=function(caracter){
-    if(caracter>=97 && caracter<=122){
-        return true;
-    }else{
-        return false;
-    }
+// Verifica si un carácter es minúscula (a-z)
+function esMinuscula(caracter) {
+  // Si el carácter no existe o está vacío, retorna false
+  if (!caracter || caracter.length === 0) return false;
+  
+  // charCodeAt(0) obtiene el código ASCII del primer carácter
+  const codigo = caracter.charCodeAt(0);
+  
+  // Verifica si el código está entre 97 (a) y 122 (z) en la tabla ASCII
+  return codigo >= 97 && codigo <= 122;
 }

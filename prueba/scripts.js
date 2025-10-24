@@ -64,172 +64,55 @@ const ventas = [
     */
 
 function agregarProducto() {
-  let nombre=recuperarTexto("nombreProducto");
-  let minusculaProducto=true;
+  let nombre = recuperarTexto("nombreProducto");
 
-  if(nombre!=null && nombre!=""){
-    if(esMayuscula(nombre.charCodeAt(0))==true){
-      for(let i=1; i<nombre.length; i++){
-        if(esMinus(nombre.charCodeAt(i))==true){
-          minusculaProducto=false;
-        }
-      }
-    }else{
-      mostrarTexto("errorNombreProducto", "La primera letra debe ser mayúscula.");  
-    }
-  }else{
-    mostrarTexto("errorNombreProducto", "El nombre no puede estar vacio");
+  const form = document.getElementById('registroForm');
+  const nombreInput = document.getElementById('nombre');
+  let errorNombreProducto=document.getElementById("errorNonmbreProducto");
+  //const nombreError = document.getElementById('nombreError');
+
+  // Validación 1: No puede estar vacío ni contener solo espacios
+  if (!nombre || nombre.trim() === '') {
+    mostrarTexto("errorNombreProducto", "El nombre no puede quedar vacío.");
+    errorNombreProducto.classList.add('show');
+    nombre.classList.add('error');
+    return false;
   }
 
-  if(minusculaProducto==false){
-    mostrarTexto("errorNombreProducto", "Solo la primera minuscula");
-  }
+  let pos=10;
+  if (nuevo == false) {
+    productos[pos].nombre = nombre;
+    productos[pos].descripcion = descripcion;
+    productos[pos].categoria = categoria;
+    productos[pos].precio = precio;
+    productos[pos].stock = stock;
 
-  let esNumero=false;
-
-  for(let i=0; i<nombre.length; i++){
-    if(esDigito(nombre.charCodeAt(i))==true){
-      esNumero=true;
-    }
-  }
-  if(esNumero==true){
-    mostrarTexto("errorNombreProducto", "No se acepta numeros");
-  }
-
-  if(minusculaProducto==true){
-    mostrarTexto("errorNombreProducto", "Solo la primera letra debe ser mayuscula");
-  }
-
-  let descripcion=recuperarTexto("descripcionProducto")
-  let minusculaDes=true;
-
-  if(descripcion!=null && descripcion!=""){
-    if(esMayuscula(descripcion.charCodeAt(0))==true){
-      for(let i=1; i<descripcion.length; i++){
-        if(esMinus(descripcion.charCodeAt(i))==true){
-          minusculaDes=false;
-        }
-      }
-    }else{
-      mostrarTexto("errorDescripcionProducto", "La primera letra debe ser mayúscula.");  
-    }
-  }else{
-    mostrarTexto("errorDescripcionProducto", "El nombre no puede estar vacio");
-  }
-
-  if(minusculaDes==true){
-    mostrarTexto("errorDescripcionProducto", "Solo la primera letra debe ser mayuscula");
-  }
-
-  esNumero=false;
-
-  for(let i=0; i<descripcion.length; i++){
-    if(esDigito(descripcion.charCodeAt(i))==true){
-      esNumero=true;
-    }
-  }
-  if(esNumero==true){
-    mostrarTexto("errorDescripcionProducto", "No se acepta numeros");
-  }
-
-  let categoria=recuperarTexto("categoriaProducto")
-  let minusculaCategoria=true;
-
-  if(categoria!=null && categoria!=""){
-    if(esMayuscula(categoria.charCodeAt(0))==true){
-      for(let i=1; i<categoria.length; i++){
-        if(esMinus(categoria.charCodeAt(i))==true){
-          minusculaCategoria=false;
-        }
-      }
-    }else{
-      mostrarTexto("errorCategoriaProducto", "La primera letra debe ser mayúscula.");  
-    }
-  }else{
-    mostrarTexto("errorCategoriaProducto", "El nombre no puede estar vacio");
-  }
-
-  if(minusculaCategoria==true){
-    mostrarTexto("errorCategoriaProducto", "Solo la primera letra debe ser mayuscula");
-  }
-
-  esNumero=false;
-
-  for(let i=0; i<categoria.length; i++){
-    if(esDigito(categoria.charCodeAt(i))==true){
-      esNumero=true;
-    }
-  }
-  if(esNumero==true){
-    mostrarTexto("errorCategoriaProducto", "No se acepta numeros");
-  }
-
-
-  let precio=recuperarTexto("precioProducto")
-  let precioValido=false;
-
-  if(precio>=0){
-    precioValido=true;
-  }else{
-    mostrarTexto("errorPrecioProducto", "Ingrese un precio válido mayor o igual a cero");
-  }
-
-  let stock=recuperarTexto("stockProducto")
-  let stockValido=false;
-
-  if(stock>=0){
-    stockValido=true;
-  }else{
-    mostrarTexto("errorStockProducto", "Ingrese un stock válido (entero, 0 o más)");
-  }
-
-  let nuevo=false;
-  let pos;
-
-  for(let i=0; i<productos.length; i++){
-    if(productos[i].nombre==nombre){
-      pos=i;
-      nuevo=false;
-      break
-    }else{
-      nuevo=true;
-    }
-  }
-
-  if(nuevo==false){
-    productos[pos].nombre=nombre;
-    productos[pos].descripcion=descripcion;
-    productos[pos].categoria=categoria;
-    productos[pos].precio=precio;
-    productos[pos].stock=stock;
-    
-    setTimeout(()=>{
-        limpiarCamposProducto();
+    setTimeout(() => {
+      limpiarCamposProducto();
     }, 2000);
 
+    mostrarProductos();
 
-    
-    mostrarProductos()
-  }else if(nuevo==true && esNumero==false){
-    let nuevoProducto=[];
+  } else if (nuevo == true && esNumero == false  ) {
+    let nuevoProducto = [];
 
-    nuevoProducto.nombre=nombre;
-    nuevoProducto.descripcion=descripcion;
-    nuevoProducto.categoria=categoria;
-    nuevoProducto.precio=precio;
-    nuevoProducto.stock=stock;
+    nuevoProducto.nombre = nombre;
+    nuevoProducto.descripcion = descripcion;
+    nuevoProducto.categoria = categoria;
+    nuevoProducto.precio = precio;
+    nuevoProducto.stock = stock;
 
     productos.push(nuevoProducto);
 
-    
-    setTimeout(()=>{
-        limpiarCamposProducto();
+
+    setTimeout(() => {
+      limpiarCamposProducto();
     }, 2000);
 
     mostrarProductos()
   }
 
-  
+
   actualizarEstadisticasProductos();
 }
 
@@ -241,77 +124,77 @@ function mostrarProductos() {
       - Crear filas dinámicas con los datos y botón para eliminar
     */
 
-  let cmpTabla=document.getElementById("tablaProductos");
-    let contenidoTabla="<table><tr>"+
-    "<th>NOMBRE</th>"+
-    "<th>DESCRIPCION</th>"+
-    "<th>CATEGORIA</th>"+
-    "<th>PRECIO</th>"+
-    "<th>STOCK</th>"+
-    "<th>PRECIO CON IVA</th>"+
+  let cmpTabla = document.getElementById("tablaProductos");
+  let contenidoTabla = "<table><tr>" +
+    "<th>NOMBRE</th>" +
+    "<th>DESCRIPCION</th>" +
+    "<th>CATEGORIA</th>" +
+    "<th>PRECIO</th>" +
+    "<th>STOCK</th>" +
+    "<th>PRECIO CON IVA</th>" +
     "</tr>";
-    for(let i=0; i<productos.length; i++){
+  for (let i = 0; i < productos.length; i++) {
 
-        elementoProductos=productos[i];
-        let precioIva;
-        let precioSinIva=parseFloat(elementoProductos.precio);
+    elementoProductos = productos[i];
+    let precioIva;
+    let precioSinIva = parseFloat(elementoProductos.precio);
 
-        precioIva=((precioSinIva*.12)+precioSinIva).toFixed(2);
+    precioIva = ((precioSinIva * .12) + precioSinIva).toFixed(2);
 
-        contenidoTabla+="<tr><td>"+elementoProductos.nombre+"</td>"
-        +"<td>"+elementoProductos.descripcion+"</td>"
-        +"<td>"+elementoProductos.categoria+"</td>"
-        +"<td>"+elementoProductos.precio+"</td>"
-        +"<td>"+elementoProductos.stock+"</td>"
-        +"<td>"+precioIva+"</td>" //decimales y suma
-        +"</tr>"
-    }
-    contenidoTabla+="</table>"
-    cmpTabla.innerHTML=contenidoTabla;
+    contenidoTabla += "<tr><td>" + elementoProductos.nombre + "</td>"
+      + "<td>" + elementoProductos.descripcion + "</td>"
+      + "<td>" + elementoProductos.categoria + "</td>"
+      + "<td>" + elementoProductos.precio + "</td>"
+      + "<td>" + elementoProductos.stock + "</td>"
+      + "<td>" + precioIva + "</td>" //decimales y suma
+      + "</tr>"
+  }
+  contenidoTabla += "</table>"
+  cmpTabla.innerHTML = contenidoTabla;
 
 
 }
 
-buscarProducto=function(){
-  let nombre=recuperarTexto("productoEliminar");
-  let index=null;
+buscarProducto = function () {
+  let nombre = recuperarTexto("productoEliminar");
+  let index = null;
 
-  if(nombre!=null && nombre!=""){
-      for(let i=0; i<productos.length; i++){
-        if(productos[i].nombre==nombre){
-          index=i;
-          break;  
-        }
+  if (nombre != null && nombre != "") {
+    for (let i = 0; i < productos.length; i++) {
+      if (productos[i].nombre == nombre) {
+        index = i;
+        break;
       }
-  }else{
-      mostrarTexto("errorBuscaEliminar", "No se acepta campos vacios");  
+    }
+  } else {
+    mostrarTexto("errorBuscaEliminar", "No se acepta campos vacios");
   }
 
   eliminarProducto(index);
-  
+
 }
 
 // Función: eliminar producto por índice
 function eliminarProducto(index) {
-/*
-// Función para eliminar un producto en la posición dada del array
-function eliminarProducto(index) {
-  // El método splice modifica el array original eliminando elementos
-  // El primer parámetro 'index' indica la posición donde empezar a eliminar
-  // El segundo parámetro '1' indica que se elimina un solo elemento
-  productos.splice(index, 1);
-}
-*/
-  if(index==null){
-    mostrarTexto("errorBuscaEliminar", "No se encontro el elemento");  
-  }else{
-    productos.splice(index,1);
+  /*
+  // Función para eliminar un producto en la posición dada del array
+  function eliminarProducto(index) {
+    // El método splice modifica el array original eliminando elementos
+    // El primer parámetro 'index' indica la posición donde empezar a eliminar
+    // El segundo parámetro '1' indica que se elimina un solo elemento
+    productos.splice(index, 1);
+  }
+  */
+  if (index == null) {
+    mostrarTexto("errorBuscaEliminar", "No se encontro el elemento");
+  } else {
+    productos.splice(index, 1);
     mostrarProductos();
-    mostrarTexto("errorBuscaEliminar", "");  
-    mostrarTextoEnCaja("productoEliminar","");
+    mostrarTexto("errorBuscaEliminar", "");
+    mostrarTextoEnCaja("productoEliminar", "");
     alert("Elemento Eliminado");
   }
-  
+
   actualizarEstadisticasProductos();
   /*
       - Confirmar acción con el usuario
@@ -319,7 +202,7 @@ function eliminarProducto(index) {
       - Actualizar tabla y estadísticas
     */
 
-      
+
 }
 
 // Función: actualizar estadísticas de productos
@@ -328,18 +211,18 @@ function actualizarEstadisticasProductos() {
       - Calcular y mostrar total productos, stock total y valor inventario
     */
 
-  let cont=0;
-  let stock=0;
-  let precio=0;
-  
+  let cont = 0;
+  let stock = 0;
+  let precio = 0;
 
-      for(let i=0; i<productos.length; i++){
-        cont++;
-        stock+=parseInt(productos[i].stock);
-        precio+=parseFloat(productos[i].precio) * parseInt(productos[i].stock);
-      }
-      
-  
+
+  for (let i = 0; i < productos.length; i++) {
+    cont++;
+    stock += parseInt(productos[i].stock);
+    precio += parseFloat(productos[i].precio) * parseInt(productos[i].stock);
+  }
+
+
   mostrarTexto("totalProductos", cont);
   mostrarTexto("stockTotal", stock);
   mostrarTexto("valorInventario", precio);
@@ -352,16 +235,16 @@ function limpiarCamposProducto() {
       - Limpiar inputs de producto para nueva entrada
     */
 
-      mostrarTexto("nombreProducto", "");
-      mostrarTexto("errorNombreProducto", "");
-      mostrarTexto("descripcionProducto", "");
-      mostrarTexto("errorDescripcionProducto", "");
-      mostrarTexto("categoriaProducto", "");
-      mostrarTexto("errorCategoriaProducto", "");
-      mostrarTexto("precioProducto", "");
-      mostrarTexto("errorPrecioProducto", "");
-      mostrarTexto("stockProducto", "");
-      mostrarTexto("errorStockProducto", "");
+  mostrarTexto("nombreProducto", "");
+  mostrarTexto("errorNombreProducto", "");
+  mostrarTexto("descripcionProducto", "");
+  mostrarTexto("errorDescripcionProducto", "");
+  mostrarTexto("categoriaProducto", "");
+  mostrarTexto("errorCategoriaProducto", "");
+  mostrarTexto("precioProducto", "");
+  mostrarTexto("errorPrecioProducto", "");
+  mostrarTexto("stockProducto", "");
+  mostrarTexto("errorStockProducto", "");
 }
 
 // Función: agregar categoría
