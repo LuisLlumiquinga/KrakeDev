@@ -65,53 +65,63 @@ const ventas = [
 
 function agregarProducto() {
   let nombre = recuperarTexto("nombreProducto");
+  let descripcion = recuperarTexto("descripcionProducto");
+  let categoria = recuperarTexto("categoriaProducto");
+  let precio = recuperarTexto("precioProducto");
+  let stock = recuperarTexto("stockProducto");
 
-  const form = document.getElementById('registroForm');
-  const nombreInput = document.getElementById('nombre');
-  let errorNombreProducto=document.getElementById("errorNonmbreProducto");
-  //const nombreError = document.getElementById('nombreError');
+  let nombreValido = validarNombre(nombre);
+  if (nombreValido == true) mostrarTexto("errorNombreProducto", "");
 
-  // Validación 1: No puede estar vacío ni contener solo espacios
-  if (!nombre || nombre.trim() === '') {
-    mostrarTexto("errorNombreProducto", "El nombre no puede quedar vacío.");
-    errorNombreProducto.classList.add('show');
-    nombre.classList.add('error');
-    return false;
-  }
+  let descripcionValido = validarDescripcion(descripcion);
+  if (descripcionValido == true) mostrarTexto("errorDescripcionProducto", "");
 
-  let pos=10;
-  if (nuevo == false) {
-    productos[pos].nombre = nombre;
-    productos[pos].descripcion = descripcion;
-    productos[pos].categoria = categoria;
-    productos[pos].precio = precio;
-    productos[pos].stock = stock;
+  let categoriaValida = validarCategoria(categoria);
+  if (categoriaValida == true) mostrarTexto("errorCategoriaProducto", "");
 
-    setTimeout(() => {
+  let precioValido = validarPrecio(precio);
+  if (precioValido == true) mostrarTexto("errorPrecioProducto", "");
+
+  let stockValido = validarStock(stock);
+  if (stockValido == true) mostrarTexto("errorStockProducto", "");
+
+  if (nombreValido == true && descripcionValido == true && categoriaValida == true && precioValido == true && stockValido == true) {
+    let productoExiste = false;
+    let pos = 0;
+
+    for (let i = 0; i < productos.length; i++) {
+      if (productos[i].nombre == nombre) {
+        productoExiste = true;
+        pos = i;
+      }
+    }
+
+    if (productoExiste == true) {
+      productos[pos].nombre = nombre;
+      productos[pos].descripcion = descripcion;
+      productos[pos].categoria = categoria;
+      productos[pos].precio = precio;
+      productos[pos].stock = stock;
+
+      alert("Producto actualizado");
       limpiarCamposProducto();
-    }, 2000);
+      mostrarProductos();
+    } else if (productoExiste == false) {
+      let nuevoProducto = [];
 
-    mostrarProductos();
+      nuevoProducto.nombre = nombre;
+      nuevoProducto.descripcion = descripcion;
+      nuevoProducto.categoria = categoria;
+      nuevoProducto.precio = precio;
+      nuevoProducto.stock = stock;
 
-  } else if (nuevo == true && esNumero == false  ) {
-    let nuevoProducto = [];
-
-    nuevoProducto.nombre = nombre;
-    nuevoProducto.descripcion = descripcion;
-    nuevoProducto.categoria = categoria;
-    nuevoProducto.precio = precio;
-    nuevoProducto.stock = stock;
-
-    productos.push(nuevoProducto);
-
-
-    setTimeout(() => {
+      alert("Producto Nuevo agregado");
+      productos.push(nuevoProducto);
       limpiarCamposProducto();
-    }, 2000);
 
-    mostrarProductos()
+      mostrarProductos()
+    }
   }
-
 
   actualizarEstadisticasProductos();
 }
@@ -132,6 +142,7 @@ function mostrarProductos() {
     "<th>PRECIO</th>" +
     "<th>STOCK</th>" +
     "<th>PRECIO CON IVA</th>" +
+    "<th>ACCION</th>" +
     "</tr>";
   for (let i = 0; i < productos.length; i++) {
 
@@ -147,31 +158,35 @@ function mostrarProductos() {
       + "<td>" + elementoProductos.precio + "</td>"
       + "<td>" + elementoProductos.stock + "</td>"
       + "<td>" + precioIva + "</td>" //decimales y suma
+      + "<td><button onclick='eliminarProducto(" + i + ")'>ELIMINAR</button></td>"
       + "</tr>"
   }
   contenidoTabla += "</table>"
   cmpTabla.innerHTML = contenidoTabla;
-
-
 }
 
 buscarProducto = function () {
   let nombre = recuperarTexto("productoEliminar");
   let index = null;
 
-  if (nombre != null && nombre != "") {
+  if (!nombre || nombre.trim() === '') {
+    mostrarTexto("errorBuscaEliminar", "No se acepta campos vacios");
+    setTimeout(() => {
+      mostrarTexto("errorBuscaEliminar", "");
+      mostrarTextoEnCaja("productoEliminar", "");
+    }, 2000);
+    return false;
+
+  } else {
     for (let i = 0; i < productos.length; i++) {
       if (productos[i].nombre == nombre) {
         index = i;
         break;
       }
     }
-  } else {
-    mostrarTexto("errorBuscaEliminar", "No se acepta campos vacios");
   }
 
   eliminarProducto(index);
-
 }
 
 // Función: eliminar producto por índice
@@ -187,6 +202,12 @@ function eliminarProducto(index) {
   */
   if (index == null) {
     mostrarTexto("errorBuscaEliminar", "No se encontro el elemento");
+
+    setTimeout(() => {
+      mostrarTexto("errorBuscaEliminar", "");
+      mostrarTextoEnCaja("productoEliminar", "");
+    }, 2000);
+
   } else {
     productos.splice(index, 1);
     mostrarProductos();
@@ -201,8 +222,6 @@ function eliminarProducto(index) {
       - Remover producto de la lista productos
       - Actualizar tabla y estadísticas
     */
-
-
 }
 
 // Función: actualizar estadísticas de productos
@@ -235,16 +254,16 @@ function limpiarCamposProducto() {
       - Limpiar inputs de producto para nueva entrada
     */
 
-  mostrarTexto("nombreProducto", "");
-  mostrarTexto("errorNombreProducto", "");
-  mostrarTexto("descripcionProducto", "");
-  mostrarTexto("errorDescripcionProducto", "");
-  mostrarTexto("categoriaProducto", "");
-  mostrarTexto("errorCategoriaProducto", "");
-  mostrarTexto("precioProducto", "");
-  mostrarTexto("errorPrecioProducto", "");
-  mostrarTexto("stockProducto", "");
-  mostrarTexto("errorStockProducto", "");
+  mostrarTextoEnCaja("nombreProducto", "");
+  mostrarTextoEnCaja("errorNombreProducto", "");
+  mostrarTextoEnCaja("descripcionProducto", "");
+  mostrarTextoEnCaja("errorDescripcionProducto", "");
+  mostrarTextoEnCaja("categoriaProducto", "");
+  mostrarTextoEnCaja("errorCategoriaProducto", "");
+  mostrarTextoEnCaja("precioProducto", "");
+  mostrarTextoEnCaja("errorPrecioProducto", "");
+  mostrarTextoEnCaja("stockProducto", "");
+  mostrarTextoEnCaja("errorStockProducto", "");
 }
 
 // Función: agregar categoría

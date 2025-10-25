@@ -95,14 +95,94 @@ function sonMayusculas(palabra) {
   return true;
 }
 
-// Verifica si un carácter es minúscula (a-z)
+//Verifica si un caracter es minuscula (a-z)
 function esMinuscula(caracter) {
-  // Si el carácter no existe o está vacío, retorna false
   if (!caracter || caracter.length === 0) return false;
-  
-  // charCodeAt(0) obtiene el código ASCII del primer carácter
   const codigo = caracter.charCodeAt(0);
-  
-  // Verifica si el código está entre 97 (a) y 122 (z) en la tabla ASCII
   return codigo >= 97 && codigo <= 122;
+}
+
+function validarNombre(nombre) {
+  // Validación 1: No puede estar vacío ni contener solo espacios
+  if (!nombre || nombre.trim() === '') {
+    mostrarTexto("errorNombreProducto", "El nombre no puede quedar vacío.");
+    return false;
+  }
+
+  // Validación 2: Solo debe contener letras (sin números, símbolos ni caracteres especiales)
+  const soloLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$/;
+  if (!soloLetras.test(nombre)) {
+    mostrarTexto("errorNombreProducto", "El nombre debe contener solo letras.");
+    return false;
+  }
+
+  // Validación 3: La primera letra debe ser mayúscula y el resto minúsculas
+  const formatoCorrecto = /^[A-ZÁÉÍÓÚÑÜ][a-záéíóúñü\s]*$/;
+  if (!formatoCorrecto.test(nombre)) {
+    mostrarTexto("errorNombreProducto", "La primera letra debe ser mayúscula.");
+    return false;
+  }
+
+  return true;
+}
+
+function validarDescripcion(descripcion) {
+  // Validación 1: No puede estar vacío ni contener solo espacios
+  if (!descripcion || descripcion.trim() === '') {
+    mostrarTexto("errorDescripcionProducto", "La descripcion no puede quedar vacío.");
+    return false;
+  }
+
+  // Validación 2: Sin caracteres raros
+  const caracteresRaros = /[<>{}[\]\\|`~]/;
+  if (caracteresRaros.test(descripcion)) {
+    mostrarTexto("errorDescripcionProducto", "La descripcion no puede tener caracteres raros.");
+    return false;
+  }
+
+  return true;
+}
+
+function validarCategoria(categoria) {
+  // Validacion 1: No puede estar vacia
+  if (!categoria || categoria.trim() === '') {
+    mostrarTexto("errorCategoriaProducto", "La categoría no puede quedar vacio.");
+    return false;
+  }
+
+  const soloLetrasYEspacios = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$/;
+  if (!soloLetrasYEspacios.test(categoria)) {
+    mostrarTexto("errorCategoriaProducto", "La categoría debe contener solo letras");
+    return false;
+  }
+
+  const formatoCorrecto = /^[A-ZÁÉÍÓÚÑÜ][a-záéíóúñü\s]*$/;
+  if (!formatoCorrecto.test(categoria)) {
+    mostrarTexto("errorCategoriaProducto", "Solo la primera letra debe ser mayuscula.");
+    return false;
+  }
+
+  return true;
+}
+
+function validarPrecio(precio) {
+  const precioNumero = parseFloat(precio);
+
+  if (isNaN(precioNumero) || precioNumero < 0) {
+    mostrarTexto("errorPrecioProducto", "Ingrese un precio válido mayor o igual a cero.");
+    return false;
+  }
+
+  return true;
+}
+
+function validarStock(stock) {
+  const stockNumero = parseInt(stock);
+
+  if (isNaN(stockNumero) || stockNumero < 0 || !Number.isInteger(parseFloat(stock))) {
+    mostrarTexto("errorStockProducto", "Ingrese un stock válido (entero, 0 o más)");
+    return false;
+  }
+
+  return true;
 }
