@@ -221,3 +221,13 @@ function validarCodigo(codigo) {
   return true;
 }
 
+
+function validarDatos(dato, label) {
+  // Validación 1: No puede estar vacío ni contener solo espacios
+  if (!dato || dato.trim() === '') {
+    mostrarTexto(label, "El nombre es obligatorio.");
+    return false;
+  }
+
+  return true;
+}

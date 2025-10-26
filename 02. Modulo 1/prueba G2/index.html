@@ -17,13 +17,13 @@
 
     <nav class="menu">
         <button onclick="mostrarSeccion('seccion1')">Estudiantes</button>
-        <button onclick="mostrarSeccion('seccion2')">Categorías</button>
+        <button onclick="mostrarSeccion('seccion2')">Curso/Docente</button>
         <button onclick="mostrarSeccion('seccion3')">Carrito</button>
         <button onclick="mostrarSeccion('seccion4')">Cliente</button>
         <button onclick="mostrarSeccion('seccion5')">Resumen Ventas</button>
     </nav>
 
-    <!-- Sección 1: Gestión de productos -->
+    <!-- Sección 1: Gestión de estudiantes -->
     <div id="seccion1" class="seccion" style="display:none;">
         <div class="contenido-seccion">
             <h2>Gestión de Estudiantes (Reto Individual)</h2>
@@ -74,30 +74,30 @@
         </div>
     </div>
 
-    <!-- Sección 2: Gestión de categorías -->
+    <!-- Sección 2: Curso/Docente -->
     <div id="seccion2" class="seccion" style="display:none;">
         <div class="contenido-seccion">
-            <h2>Gestión de Categorías (Reto Grupal)</h2>
+            <h2>Curso - Docente (Reto Grupal)</h2>
 
             <div class="campo">
-                <label for="nombreCategoria">Nombre Categoría:</label>
-                <input type="text" id="nombreCategoria" placeholder="Ej: Ropa" />
-                <div class="error" id="errorNombreCategoria">......</div>
+                <label for="nombreCategoria">Nombre del Curso:</label>
+                <input type="text" id="nombreCurso" placeholder="Ej: tercero A" />
+                <div class="error" id="errorNombreCurso"></div>
             </div>
 
             <div class="campo">
-                <label for="descripcionCategoria">Descripción Corta:</label>
-                <input type="text" id="descripcionCategoria" maxlength="50" placeholder="Opcional" />
-                <div class="error" id="errorDescripcionCategoria">.......</div>
+                <label for="descripcionCategoria">Nombre docente:</label>
+                <input type="text" id="nombreDocente" maxlength="50" placeholder="Andre Mary" />
+                <div class="error" id="errorNombreDocente"></div>
             </div>
 
             <div class="campo">
-                <button type="button" onclick="agregarCategoria()">Agregar Categoría</button>
+                <button type="button" onclick="agregarAsistencia()">GUARDAR</button>
             </div>
 
-            <h3>Categorías Registradas</h3>
-            <ul id="listaCategorias">
-                <!-- Categorías aparecerán aquí -->
+            <h3>Asistencias Registradas</h3>
+            <ul id="listaAsistencias">
+                <!-- Asistencias aparecerán aquí -->
             </ul>
         </div>
     </div>
@@ -192,7 +192,6 @@
             document.querySelectorAll('.seccion').forEach(div => {
                 div.style.display = div.id === id ? 'block' : 'none';
             });
-            mostrarVentas();
         }
     </script>
 

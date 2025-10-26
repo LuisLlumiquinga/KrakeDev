@@ -1,4 +1,4 @@
-// Lista base de productos
+// Lista base de estudiantes
 const estudiantes = [
   {
     nombre: "Joselyne Daniela Morales Arcentales",
@@ -17,39 +17,23 @@ const estudiantes = [
   },
 ];
 
-// Lista base de categorías
-const categorias = [
-  { nombre: "Ropa", descripcion: "Prendas de vestir" },
-  { nombre: "Calzado", descripcion: "Zapatos, sandalias y más" },
-];
-
-const carrito = [
-  { nombre: "Camisa", cantidad: 10, precio: 25.99 },
-  { nombre: "Zapatos", cantidad: 12, precio: 60.5 },
-  { nombre: "Camisa", cantidad: 1, precio: 25.99 },
-  { nombre: "Zapatos", cantidad: 10, precio: 60.5 },
-];
-
-const ventas = [
+// Lista base de asistencias
+const asistencias = [
   {
-    cliente: {
-      nombre: "Juan Pérez",
-      email: "juan.perez@example.com",
-      telefono: "0991234567",
-      direccion: "Av. Siempre Viva 123",
-    },
-    total: 112.48,
+    curso: "Tercero B",
+    docente: "Joselyne Morales",
   },
   {
-    cliente: {
-      nombre: "María López",
-      email: "maria.lopez@example.com",
-      telefono: "0987654321",
-      direccion: "Calle Falsa 456",
-    },
-    total: 40.0,
+    curso: "Quinto C",
+    docente: "Liset Andrade",
+  },
+  {
+    curso: "Primero B",
+    docente: "Andrea Gonzaga",
   },
 ];
+
+
 // Función: agregar o actualizar producto
 /*
       - Obtener datos del producto desde inputs
@@ -223,168 +207,40 @@ function limpiarCamposEstudiante() {
   mostrarTextoEnCaja("idEstudiante", "");
 }
 
-// Función: agregar categoría
-function agregarCategoria() {
-  /*
-      - Obtener datos desde inputs
-      - Validar campos obligatorios y evitar duplicados
-      - Agregar categoría a la lista
-      - Limpiar campos y actualizar lista de categorías
-    */
-}
+function agregarAsistencia() {
+  let curso = recuperarTexto("nombreCurso");
+  let docente = recuperarTexto("nombreDocente");
 
-// Función: mostrar categorías
-function mostrarCategorias() {
-  /*
-      - Limpiar lista actual
-      - Recorrer categorías y mostrar en lista HTML
-      - Agregar botón para eliminar categoría
-    */
-}
+  let cursoValido = validarDatos(curso, "errorNombreCurso");
+  if (cursoValido == true) mostrarTexto("errorNombreCurso", "");
 
-// Función: eliminar categoría
-function eliminarCategoria(index) {
-  /*
-      - Confirmar con el usuario
-      - Eliminar categoría de la lista
-      - Actualizar lista en pantalla
-    */
-}
+  let docenteValido = validarDatos(docente, "errorNombreDocente");
+  if (docenteValido == true) mostrarTexto("errorNombreDocente", "");
 
-// Función: mostrar productos disponibles para añadir al carrito
-function mostrarProductosDisponibles() {
-  /*
-      - Mostrar lista de productos con botón para añadir al carrito
-    */
-}
+  if (cursoValido == true && docenteValido == true) {
+    let nuevo=[];
 
-// Función: añadir producto al carrito
-function agregarAlCarrito(nombreProducto) {
-  /*
-      - Validar cantidad y stock disponible
-      - Añadir producto o aumentar cantidad en carrito
-      - Actualizar resumen y total del carrito
-    */
-}
+    nuevo.curso=curso;
+    nuevo.docente=docente;
 
-// Función: mostrar resumen del carrito
-function mostrarCarrito() {
-  /*
-      - Mostrar tabla con productos en carrito, cantidades y subtotal
-      - Mostrar total general
-    */
-}
+    asistencias.push(nuevo);
 
-// Función: editar cantidad de producto en carrito
-function editarCantidadCarrito(index) {
-  /*
-      - Validar nueva cantidad contra stock
-      - Actualizar cantidad en carrito
-      - Actualizar tabla y total
-    */
-}
+    let cmpTabla = document.getElementById("listaAsistencias");
+    let contenidoTabla = "<table><tr>" +
+      "<th>No</th>" +
+      "<th>ASISTENCIA</th>" +
+      "<th>ACCION</th>" +
+      "</tr>";
 
-// Función: eliminar producto del carrito
-function eliminarDelCarrito(index) {
-  /*
-      - Eliminar producto del carrito
-      - Actualizar tabla y total
-    */
-}
+    for (let i=0, j=0; i < asistencias.length; i++, j++) {
+      elementoAsistencias = asistencias[i];
 
-// Función: guardar datos cliente
-function guardarDatosCliente() {
-  /*
-      - Obtener y validar campos del cliente (nombre, email, teléfono, dirección)
-      - Guardar datos para la compra
-    */
-}
-
-// Función: finalizar compra
-function finalizarCompra() {
-  /*
-      - Validar carrito y datos cliente completos
-      - Crear registro de venta con productos, cliente, total y fecha
-      - Actualizar stock de productos vendidos
-      - Vaciar carrito
-      - Actualizar tablas y estadísticas
-      - Mostrar mensaje éxito y limpiar formulario cliente
-    */
-}
-
-// Función: mostrar resumen de ventas
-function mostrarVentas() {
-  /*
-      - Mostrar tabla con ventas registradas
-      - Calcular y mostrar totales globales y producto más vendido
-    */
-  
-  let totalVenta=0;
-  let cmpTabla=document.getElementById("tablaVentas");
-  let contenidoTabla="<table><tr>"+
-  "<th>Cliente</th>"+
-  "<th>Productos</th>"+
-  "<th>Total</th>"+
-  "</th>";
-
-  for(let i=0; i<carrito.length; i++){
-    elementoCarrito=carrito[i];
-
-    let total=elementoCarrito.cantidad*elementoCarrito.precio;
-    let cliente=ventas[ventas.length-1].cliente.nombre;
-
-    totalVenta+=total;
-
-    contenidoTabla+="<tr><td>"+cliente+"</td>"
-    +"<td>"+elementoCarrito.nombre+"</td>"
-    +"<td>"+total+"</td>"
-    +"</tr>"
-  }
-  contenidoTabla+="</table>"
-  cmpTabla.innerHTML=contenidoTabla;
-
-  mostrarTexto("totalVentas", totalVenta.toFixed(2));
-
-  calcularProductoMasVendido();
-}
-
-// Función: calcular producto más vendido
-function calcularProductoMasVendido() {
-  /*
-      - Contar cantidades vendidas de cada producto en todas las ventas
-      - Retornar nombre de producto con mayor cantidad vendida
-    */
-  
-  let productoNuevo=[];
-  let cont=0;
-
-  for(let i=0; i<productos.length; i++){
-    let productoMayor=[];
-    let cantidad=0;
-    for(let j=0; j<carrito.length; j++){
-      if(productos[i].nombre==carrito[j].nombre){
-        productoMayor.nombre=productos[i].nombre;
-        cantidad+=carrito[j].cantidad;
-      }
+      contenidoTabla += "<tr><td>" + (j) + "</td>"
+        + "<td>" + "Asistencia del Curso: " + elementoAsistencias.curso + ", pasada por " + elementoAsistencias.docente + "</td>"
+        + "<td><button onclick='eliminarAsistencia(" + i + ")'>ELIMINAR</button></td>"
+        + "</tr>"
     }
-    productoMayor.cantidad=cantidad;
-    productoNuevo.push(productoMayor);
+    contenidoTabla += "</table>"
+    cmpTabla.innerHTML = contenidoTabla;
   }
-
-  let cantMayor=parseInt(productoNuevo[0].cantidad);
-
-  for(let i=1; i<productoNuevo.length; i++){
-    if(cantMayor>productoNuevo[i].cantidad){
-
-    }else{
-      cantMayor=productoNuevo[i].cantidad;
-    }
-  }
-
-  for(let i=0; i<productoNuevo.length; i++){
-    if(productoNuevo[i].cantidad==cantMayor){
-      mostrarTexto("productoMasVendido", productoNuevo[i].nombre)
-    }
-  }
-  
 }
