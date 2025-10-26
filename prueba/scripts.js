@@ -30,8 +30,10 @@ const categorias = [
 ];
 
 const carrito = [
-  { nombre: "Camisa", cantidad: 2, precio: 25.99 },
-  { nombre: "Zapatos", cantidad: 1, precio: 60.5 },
+  { nombre: "Camisa", cantidad: 10, precio: 25.99 },
+  { nombre: "Zapatos", cantidad: 12, precio: 60.5 },
+  { nombre: "Camisa", cantidad: 1, precio: 25.99 },
+  { nombre: "Zapatos", cantidad: 10, precio: 60.5 },
 ];
 
 const ventas = [
@@ -361,6 +363,34 @@ function mostrarVentas() {
       - Mostrar tabla con ventas registradas
       - Calcular y mostrar totales globales y producto más vendido
     */
+  
+  let totalVenta=0;
+  let cmpTabla=document.getElementById("tablaVentas");
+  let contenidoTabla="<table><tr>"+
+  "<th>Cliente</th>"+
+  "<th>Productos</th>"+
+  "<th>Total</th>"+
+  "</th>";
+
+  for(let i=0; i<carrito.length; i++){
+    elementoCarrito=carrito[i];
+
+    let total=elementoCarrito.cantidad*elementoCarrito.precio;
+    let cliente=ventas[ventas.length-1].cliente.nombre;
+
+    totalVenta+=total;
+
+    contenidoTabla+="<tr><td>"+cliente+"</td>"
+    +"<td>"+elementoCarrito.nombre+"</td>"
+    +"<td>"+total+"</td>"
+    +"</tr>"
+  }
+  contenidoTabla+="</table>"
+  cmpTabla.innerHTML=contenidoTabla;
+
+  mostrarTexto("totalVentas", totalVenta.toFixed(2));
+
+  calcularProductoMasVendido();
 }
 
 // Función: calcular producto más vendido
@@ -369,4 +399,37 @@ function calcularProductoMasVendido() {
       - Contar cantidades vendidas de cada producto en todas las ventas
       - Retornar nombre de producto con mayor cantidad vendida
     */
+  
+  let productoNuevo=[];
+  let cont=0;
+
+  for(let i=0; i<productos.length; i++){
+    let productoMayor=[];
+    let cantidad=0;
+    for(let j=0; j<carrito.length; j++){
+      if(productos[i].nombre==carrito[j].nombre){
+        productoMayor.nombre=productos[i].nombre;
+        cantidad+=carrito[j].cantidad;
+      }
+    }
+    productoMayor.cantidad=cantidad;
+    productoNuevo.push(productoMayor);
+  }
+
+  let cantMayor=parseInt(productoNuevo[0].cantidad);
+
+  for(let i=1; i<productoNuevo.length; i++){
+    if(cantMayor>productoNuevo[i].cantidad){
+
+    }else{
+      cantMayor=productoNuevo[i].cantidad;
+    }
+  }
+
+  for(let i=0; i<productoNuevo.length; i++){
+    if(productoNuevo[i].cantidad==cantMayor){
+      mostrarTexto("productoMasVendido", productoNuevo[i].nombre)
+    }
+  }
+  
 }
