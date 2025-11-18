@@ -1,0 +1,325 @@
+[2025-11-17 16:32:09] Executing manual tasks
+[2025-11-17 16:32:09] OpenJDK Runtime Environment 21.0.8+9-LTS
+[2025-11-17 16:32:09] Product self.product.version
+[2025-11-17 16:32:09] Workspace D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\WorkspaceModulo3
+[2025-11-17 16:32:09] Bundle org.eclipse.oomph.setup 1.32.0.v20250612-1417, build=1073, branch=bd94f8cbff67a1b42f0e2bf515af0dedc7fe4315
+[2025-11-17 16:32:09] Bundle org.eclipse.oomph.setup.core 1.35.0.v20250805-0709, build=1073, branch=bd94f8cbff67a1b42f0e2bf515af0dedc7fe4315
+[2025-11-17 16:32:09] Bundle org.eclipse.oomph.setup.p2 1.23.0.v20250805-0709, build=1073, branch=bd94f8cbff67a1b42f0e2bf515af0dedc7fe4315
+[2025-11-17 16:32:09] Performing P2 Director (Eclipse IDE Milestone Updates)
+[2025-11-17 16:32:09] Offline = false
+[2025-11-17 16:32:09] Mirrors = true
+[2025-11-17 16:32:09] Resolving 95 requirements from 8 repositories to D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\eclipse-jee-2025-09-R-win32-x86_64\eclipse
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.epp.package.common [4.38.0,5.0.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group [2.8.0,2.9.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.buildship.feature.group [3.1.0,3.2.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:epp.package.jee [4.37.0,4.38.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jpt.jaxb.eclipselink.feature.feature.group [1.4.0,1.5.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.enterprise_ui.feature.feature.group [3.39.0,3.40.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.sdk.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jgit.feature.group [7.4.0,7.5.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.results.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.jdt.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.intro.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.connectivity.oda.designer.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.oda.designer.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.pde.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jpt.jpa.eclipselink.feature.feature.group [3.4.0,3.5.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.ingres.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.github.feature.feature.group [6.9.0,6.10.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.wikitext.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.oomph.setup.feature.group [1.37.0,1.38.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tm4e.language_pack.feature.feature.group [0.14.0,0.15.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.msft.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.jdt.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqltools.doc.user.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.oracle.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.connectivity.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.mysql.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sdk.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tm4e.feature.feature.group [0.14.0,0.15.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tips.feature.feature.group [0.4.0,0.5.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.wst.xsl.feature.feature.group [1.3.0,1.4.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.pde.feature.group [3.16.0,3.17.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.ws.cxf.feature.feature.group [1.1.0,1.2.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.reviews.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.jenkins.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.justj.epp.feature.group [21.0.0,21.1.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.connectivity.doc.user.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.jdbc.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jsf.feature.feature.group [3.14.0,3.15.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.webpageeditor.feature.feature.group [2.12.0,2.13.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.eclemma.feature.feature.group [3.1.0,3.2.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.wst.server_adapters.feature.feature.group [3.39.0,3.40.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.ibm.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jpt.jaxb.feature.feature.group [1.5.0,1.6.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.sybase.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jdt.bcoview.feature.feature.group [1.2.0,1.3.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.apache.derby.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.ws.jaxws.feature.feature.group [1.2.0,1.3.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.ide.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.common.doc.user.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.ddl.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.server_adapters.ext.feature.feature.group [3.4.0,3.5.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.egit.feature.group [7.4.0,7.5.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.logback.feature.feature.group [2.7.0,2.8.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jdt.feature.group [3.20.0,3.21.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.hsqldb.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.doc.user.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.wtp.feature.feature.group [1.6.0,1.7.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.ws.jaxws.dom.feature.feature.group [1.0.0,1.1.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.wtp.jsf.feature.feature.group [1.6.0,1.7.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jpt.common.eclipselink.feature.feature.group [1.3.0,1.4.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.wildwebdeveloper.embedder.node.feature.feature.group [1.2.0,1.3.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.data.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tm.terminal.feature.feature.group [12.2.0,12.3.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.wildwebdeveloper.feature.feature.group [1.3.0,1.4.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.commons.activity.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.connectivity.oda.designer.core.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jpt.common.feature.feature.group [1.5.0,1.6.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.ws.axis2tools.feature.feature.group [1.2.0,1.3.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.feature.feature.group [2.9.0,2.10.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.pde.feature.feature.group [2.3.0,2.4.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.git.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.modelbase.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.wtp.jaxrs.feature.feature.group [1.6.0,1.7.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.parsers.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.sqlite.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.postgresql.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.egit.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.common.fproj.enablement.jdt.feature.group [3.39.0,3.40.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.wst.common.fproj.feature.group [3.39.0,3.40.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.server_adapters.feature.feature.group [3.39.0,3.40.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.epp.mpc.feature.group [1.13.0,1.14.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.sap.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.ddlgen.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.oda.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.connectivity.oda.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.platform.feature.group [4.37.0,4.38.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.wtp.jpa.feature.feature.group [1.6.0,1.7.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jpt.jpa.feature.feature.group [3.8.0,3.9.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.server_ui.feature.feature.group [3.4.0,3.5.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.web_ui.feature.feature.group [3.39.0,3.40.0)
+[2025-11-17 16:32:09] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.lemminx.feature.feature.group [2.6.0,2.7.0)
+[2025-11-17 16:32:09] Repository https://download.eclipse.org/releases/milestone
+[2025-11-17 16:32:09] Repository https://download.eclipse.org/releases/latest
+[2025-11-17 16:32:09] Repository https://download.eclipse.org/webtools/repository/latest
+[2025-11-17 16:32:09] Repository https://download.eclipse.org/technology/m2e/releases/latest
+[2025-11-17 16:32:09] Repository https://download.eclipse.org/releases/2025-09
+[2025-11-17 16:32:09] Repository https://download.eclipse.org/technology/epp/packages/latest/
+[2025-11-17 16:32:09] Repository https://download.eclipse.org/justj/epp/release/latest
+[2025-11-17 16:32:09] Repository https://download.eclipse.org/eclipse/updates/4.37
+[2025-11-17 16:32:14] Fetching p2.index from https://download.eclipse.org/lsp4e/releases/0.27.6/ (172B)
+[2025-11-17 16:32:15] Fetching content.xml.xz from https://download.eclipse.org/lsp4e/releases/0.27.6/ (7,23kB)
+[2025-11-17 16:32:15] Fetching p2.index from https://download.eclipse.org/egit/updates-7.3/ (172B)
+[2025-11-17 16:32:17] Fetching content.xml.xz from https://download.eclipse.org/egit/updates-7.3/ (34,57kB)
+[2025-11-17 16:32:18] Fetching p2.index from https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/release/4.36.0/ (172B)
+[2025-11-17 16:32:19] Fetching content.xml.xz from https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/release/4.36.0/ (148,9kB)
+[2025-11-17 16:32:20] Fetching p2.index from https://download.eclipse.org/lsp4j/updates/releases/0.24.0/ (172B)
+[2025-11-17 16:32:20] Fetching content.xml.xz from https://download.eclipse.org/lsp4j/updates/releases/0.24.0/ (8,37kB)
+[2025-11-17 16:32:21] Fetching p2.index from https://download.eclipse.org/webtools/downloads/drops/R3.38.0/S-3.38RC1-20250601070120/repository/ (172B)
+[2025-11-17 16:32:22] Fetching content.xml.xz from https://download.eclipse.org/webtools/downloads/drops/R3.38.0/S-3.38RC1-20250601070120/repository/ (108,82kB)
+[2025-11-17 16:32:23] Fetching p2.index from https://download.eclipse.org/eclipse/updates/4.36/ (128B)
+[2025-11-17 16:32:24] Fetching compositeContent.jar from https://download.eclipse.org/eclipse/updates/4.36/ (448B)
+[2025-11-17 16:32:25] Fetching content.jar from https://download.eclipse.org/eclipse/updates/4.36/categories/ (1,21kB)
+[2025-11-17 16:32:26] Fetching p2.index from https://download.eclipse.org/eclipse/updates/4.36/R-4.36-202505281830/ (142B)
+[2025-11-17 16:32:27] Fetching content.xml.xz from https://download.eclipse.org/eclipse/updates/4.36/R-4.36-202505281830/ (168,19kB)
+[2025-11-17 16:32:28] Fetching p2.index from https://download.eclipse.org/modeling/emf/emf/builds/release/2.42.0/ (172B)
+[2025-11-17 16:32:29] Fetching content.xml.xz from https://download.eclipse.org/modeling/emf/emf/builds/release/2.42.0/ (32,31kB)
+[2025-11-17 16:32:30] Fetching p2.index from https://download.eclipse.org/tm4e/releases/0.15.0/ (172B)
+[2025-11-17 16:32:30] Fetching content.xml.xz from https://download.eclipse.org/tm4e/releases/0.15.0/ (10,76kB)
+[2025-11-17 16:32:31] Fetching p2.index from https://download.eclipse.org/wildwebdeveloper/releases/1.3.10/ (172B)
+[2025-11-17 16:32:31] Fetching content.xml.xz from https://download.eclipse.org/wildwebdeveloper/releases/1.3.10/ (13,42kB)
+[2025-11-17 16:32:32] Fetching p2.index from https://download.eclipse.org/justj/jres/21/updates/release/latest/ (126B)
+[2025-11-17 16:32:33] Fetching compositeContent.jar from https://download.eclipse.org/justj/jres/21/updates/release/latest/ (432B)
+[2025-11-17 16:32:33] Fetching p2.index from https://download.eclipse.org/justj/jres/21/updates/release/21.0.9/ (172B)
+[2025-11-17 16:32:34] Fetching content.xml.xz from https://download.eclipse.org/justj/jres/21/updates/release/21.0.9/ (19,16kB)
+[2025-11-17 16:32:34] Calculating requirements and dependencies.
+[2025-11-17 16:32:38] Cannot complete the request.  Generating details.
+[2025-11-17 16:32:38] ERROR: org.eclipse.equinox.p2.director code=10054 Cannot complete the install because of a conflicting dependency.
+  at org.eclipse.oomph.util.OomphPlugin.coreException(OomphPlugin.java:296)
+  at org.eclipse.oomph.p2.internal.core.ProfileTransactionImpl.resolve(ProfileTransactionImpl.java:446)
+  at org.eclipse.oomph.p2.internal.core.ProfileTransactionImpl.commit(ProfileTransactionImpl.java:356)
+  at org.eclipse.oomph.setup.p2.impl.P2TaskImpl.perform(P2TaskImpl.java:916)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.doPerformNeededSetupTasks(SetupTaskPerformer.java:3876)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer$WorkspaceUtil$1.run(SetupTaskPerformer.java:5217)
+  at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+  at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer$WorkspaceUtil.performNeededSetupTasks(SetupTaskPerformer.java:5210)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.performNeededSetupTasks(SetupTaskPerformer.java:3810)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.performTriggeredSetupTasks(SetupTaskPerformer.java:3785)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.perform(SetupTaskPerformer.java:3663)
+  at org.eclipse.oomph.setup.ui.wizards.ProgressPage$10.run(ProgressPage.java:612)
+  at org.eclipse.oomph.setup.ui.wizards.ProgressPage$12$1.run(ProgressPage.java:741)
+  at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+  ERROR: org.eclipse.equinox.p2.director code=0 Software being installed: artificial_root 1.0.0.v1763415133962
+  ERROR: org.eclipse.equinox.p2.director code=1 Only one of the following can be installed at once: 
+    ERROR: org.eclipse.equinox.p2.director code=0 Common EPP Bundle 4.38.0.20251030-0645 (org.eclipse.epp.package.common 4.38.0.20251030-0645)
+    ERROR: org.eclipse.equinox.p2.director code=0 Common EPP Bundle 4.37.0.20250905-1455 (org.eclipse.epp.package.common 4.37.0.20250905-1455)
+  ERROR: org.eclipse.equinox.p2.director code=1 Cannot satisfy dependency:
+    ERROR: org.eclipse.equinox.p2.director code=0 From: artificial_root 1.0.0.v1763415133962
+    ERROR: org.eclipse.equinox.p2.director code=0 To: org.eclipse.equinox.p2.iu; epp.package.jee [4.37.0,4.38.0)
+  ERROR: org.eclipse.equinox.p2.director code=1 Cannot satisfy dependency:
+    ERROR: org.eclipse.equinox.p2.director code=0 From: artificial_root 1.0.0.v1763415133962
+    ERROR: org.eclipse.equinox.p2.director code=0 To: org.eclipse.equinox.p2.iu; org.eclipse.epp.package.common [4.38.0,5.0.0)
+  ERROR: org.eclipse.equinox.p2.director code=1 Cannot satisfy dependency:
+    ERROR: org.eclipse.equinox.p2.director code=0 From: Eclipse IDE for Enterprise Java and Web Developers 4.37.0.20250905-1455 (epp.package.jee 4.37.0.20250905-1455)
+    ERROR: org.eclipse.equinox.p2.director code=0 To: org.eclipse.equinox.p2.iu; org.eclipse.epp.package.common.feature.feature.group [4.37.0.20250905-1455,4.37.0.20250905-1455]
+  ERROR: org.eclipse.equinox.p2.director code=1 Cannot satisfy dependency:
+    ERROR: org.eclipse.equinox.p2.director code=0 From: Eclipse Packaging Project Common Feature 4.37.0.20250905-1455 (org.eclipse.epp.package.common.feature.feature.group 4.37.0.20250905-1455)
+    ERROR: org.eclipse.equinox.p2.director code=0 To: org.eclipse.equinox.p2.iu; org.eclipse.epp.package.common [4.37.0.20250905-1455,4.37.0.20250905-1455]
+
+[2025-11-17 16:32:39] 
+[2025-11-17 16:32:45] Executing manual tasks
+[2025-11-17 16:32:45] OpenJDK Runtime Environment 21.0.8+9-LTS
+[2025-11-17 16:32:45] Product self.product.version
+[2025-11-17 16:32:45] Workspace D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\WorkspaceModulo3
+[2025-11-17 16:32:45] Bundle org.eclipse.oomph.setup 1.32.0.v20250612-1417, build=1073, branch=bd94f8cbff67a1b42f0e2bf515af0dedc7fe4315
+[2025-11-17 16:32:45] Bundle org.eclipse.oomph.setup.core 1.35.0.v20250805-0709, build=1073, branch=bd94f8cbff67a1b42f0e2bf515af0dedc7fe4315
+[2025-11-17 16:32:45] Bundle org.eclipse.oomph.setup.p2 1.23.0.v20250805-0709, build=1073, branch=bd94f8cbff67a1b42f0e2bf515af0dedc7fe4315
+[2025-11-17 16:32:45] Performing P2 Director (Eclipse IDE Milestone Updates)
+[2025-11-17 16:32:45] Offline = false
+[2025-11-17 16:32:45] Mirrors = true
+[2025-11-17 16:32:45] Resolving 95 requirements from 8 repositories to D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\eclipse-jee-2025-09-R-win32-x86_64\eclipse
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.epp.package.common [4.38.0,5.0.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group [2.8.0,2.9.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.buildship.feature.group [3.1.0,3.2.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:epp.package.jee [4.37.0,4.38.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jpt.jaxb.eclipselink.feature.feature.group [1.4.0,1.5.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.enterprise_ui.feature.feature.group [3.39.0,3.40.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.sdk.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jgit.feature.group [7.4.0,7.5.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.results.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.jdt.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.intro.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.connectivity.oda.designer.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.oda.designer.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.pde.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jpt.jpa.eclipselink.feature.feature.group [3.4.0,3.5.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.ingres.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.github.feature.feature.group [6.9.0,6.10.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.wikitext.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.oomph.setup.feature.group [1.37.0,1.38.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tm4e.language_pack.feature.feature.group [0.14.0,0.15.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.msft.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.jdt.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqltools.doc.user.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.oracle.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.connectivity.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.mysql.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sdk.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tm4e.feature.feature.group [0.14.0,0.15.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tips.feature.feature.group [0.4.0,0.5.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.wst.xsl.feature.feature.group [1.3.0,1.4.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.pde.feature.group [3.16.0,3.17.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.ws.cxf.feature.feature.group [1.1.0,1.2.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.reviews.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.jenkins.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.justj.epp.feature.group [21.0.0,21.1.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.connectivity.doc.user.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.jdbc.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jsf.feature.feature.group [3.14.0,3.15.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.webpageeditor.feature.feature.group [2.12.0,2.13.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.eclemma.feature.feature.group [3.1.0,3.2.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.wst.server_adapters.feature.feature.group [3.39.0,3.40.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.ibm.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jpt.jaxb.feature.feature.group [1.5.0,1.6.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.sybase.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jdt.bcoview.feature.feature.group [1.2.0,1.3.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.apache.derby.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.ws.jaxws.feature.feature.group [1.2.0,1.3.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.ide.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.common.doc.user.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.ddl.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.server_adapters.ext.feature.feature.group [3.4.0,3.5.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.egit.feature.group [7.4.0,7.5.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.logback.feature.feature.group [2.7.0,2.8.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jdt.feature.group [3.20.0,3.21.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.hsqldb.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.doc.user.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.wtp.feature.feature.group [1.6.0,1.7.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.ws.jaxws.dom.feature.feature.group [1.0.0,1.1.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.wtp.jsf.feature.feature.group [1.6.0,1.7.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jpt.common.eclipselink.feature.feature.group [1.3.0,1.4.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.wildwebdeveloper.embedder.node.feature.feature.group [1.2.0,1.3.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.data.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tm.terminal.feature.feature.group [12.2.0,12.3.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.wildwebdeveloper.feature.feature.group [1.3.0,1.4.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.commons.activity.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.connectivity.oda.designer.core.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jpt.common.feature.feature.group [1.5.0,1.6.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.ws.axis2tools.feature.feature.group [1.2.0,1.3.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.feature.feature.group [2.9.0,2.10.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.pde.feature.feature.group [2.3.0,2.4.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.git.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.modelbase.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.wtp.jaxrs.feature.feature.group [1.6.0,1.7.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.parsers.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.sqlite.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.postgresql.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.egit.feature.feature.group [4.8.0,4.9.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.common.fproj.enablement.jdt.feature.group [3.39.0,3.40.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.wst.common.fproj.feature.group [3.39.0,3.40.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.server_adapters.feature.feature.group [3.39.0,3.40.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.epp.mpc.feature.group [1.13.0,1.14.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.sap.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.ddlgen.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.enablement.oda.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.connectivity.oda.feature.feature.group [1.15.0,1.16.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.platform.feature.group [4.37.0,4.38.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.wtp.jpa.feature.feature.group [1.6.0,1.7.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jpt.jpa.feature.feature.group [3.8.0,3.9.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group [1.16.0,1.17.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.server_ui.feature.feature.group [3.4.0,3.5.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jst.web_ui.feature.feature.group [3.39.0,3.40.0)
+[2025-11-17 16:32:45] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.lemminx.feature.feature.group [2.6.0,2.7.0)
+[2025-11-17 16:32:45] Repository https://download.eclipse.org/releases/milestone
+[2025-11-17 16:32:45] Repository https://download.eclipse.org/releases/latest
+[2025-11-17 16:32:45] Repository https://download.eclipse.org/webtools/repository/latest
+[2025-11-17 16:32:45] Repository https://download.eclipse.org/technology/m2e/releases/latest
+[2025-11-17 16:32:45] Repository https://download.eclipse.org/releases/2025-09
+[2025-11-17 16:32:45] Repository https://download.eclipse.org/technology/epp/packages/latest/
+[2025-11-17 16:32:45] Repository https://download.eclipse.org/justj/epp/release/latest
+[2025-11-17 16:32:45] Repository https://download.eclipse.org/eclipse/updates/4.37
+[2025-11-17 16:32:53] Calculating requirements and dependencies.
+[2025-11-17 16:32:56] Cannot complete the request.  Generating details.
+[2025-11-17 16:32:56] ERROR: org.eclipse.equinox.p2.director code=10054 Cannot complete the install because of a conflicting dependency.
+  at org.eclipse.oomph.util.OomphPlugin.coreException(OomphPlugin.java:296)
+  at org.eclipse.oomph.p2.internal.core.ProfileTransactionImpl.resolve(ProfileTransactionImpl.java:446)
+  at org.eclipse.oomph.p2.internal.core.ProfileTransactionImpl.commit(ProfileTransactionImpl.java:356)
+  at org.eclipse.oomph.setup.p2.impl.P2TaskImpl.perform(P2TaskImpl.java:916)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.doPerformNeededSetupTasks(SetupTaskPerformer.java:3876)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer$WorkspaceUtil$1.run(SetupTaskPerformer.java:5217)
+  at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+  at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer$WorkspaceUtil.performNeededSetupTasks(SetupTaskPerformer.java:5210)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.performNeededSetupTasks(SetupTaskPerformer.java:3810)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.performTriggeredSetupTasks(SetupTaskPerformer.java:3785)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.perform(SetupTaskPerformer.java:3663)
+  at org.eclipse.oomph.setup.ui.wizards.ProgressPage$10.run(ProgressPage.java:612)
+  at org.eclipse.oomph.setup.ui.wizards.ProgressPage$12$1.run(ProgressPage.java:741)
+  at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+  ERROR: org.eclipse.equinox.p2.director code=0 Software being installed: artificial_root 1.0.0.v1763415167377
+  ERROR: org.eclipse.equinox.p2.director code=1 Only one of the following can be installed at once: 
+    ERROR: org.eclipse.equinox.p2.director code=0 Common EPP Bundle 4.38.0.20251030-0645 (org.eclipse.epp.package.common 4.38.0.20251030-0645)
+    ERROR: org.eclipse.equinox.p2.director code=0 Common EPP Bundle 4.37.0.20250905-1455 (org.eclipse.epp.package.common 4.37.0.20250905-1455)
+  ERROR: org.eclipse.equinox.p2.director code=1 Cannot satisfy dependency:
+    ERROR: org.eclipse.equinox.p2.director code=0 From: artificial_root 1.0.0.v1763415167377
+    ERROR: org.eclipse.equinox.p2.director code=0 To: org.eclipse.equinox.p2.iu; epp.package.jee [4.37.0,4.38.0)
+  ERROR: org.eclipse.equinox.p2.director code=1 Cannot satisfy dependency:
+    ERROR: org.eclipse.equinox.p2.director code=0 From: artificial_root 1.0.0.v1763415167377
+    ERROR: org.eclipse.equinox.p2.director code=0 To: org.eclipse.equinox.p2.iu; org.eclipse.epp.package.common [4.38.0,5.0.0)
+  ERROR: org.eclipse.equinox.p2.director code=1 Cannot satisfy dependency:
+    ERROR: org.eclipse.equinox.p2.director code=0 From: Eclipse IDE for Enterprise Java and Web Developers 4.37.0.20250905-1455 (epp.package.jee 4.37.0.20250905-1455)
+    ERROR: org.eclipse.equinox.p2.director code=0 To: org.eclipse.equinox.p2.iu; org.eclipse.epp.package.common.feature.feature.group [4.37.0.20250905-1455,4.37.0.20250905-1455]
+  ERROR: org.eclipse.equinox.p2.director code=1 Cannot satisfy dependency:
+    ERROR: org.eclipse.equinox.p2.director code=0 From: Eclipse Packaging Project Common Feature 4.37.0.20250905-1455 (org.eclipse.epp.package.common.feature.feature.group 4.37.0.20250905-1455)
+    ERROR: org.eclipse.equinox.p2.director code=0 To: org.eclipse.equinox.p2.iu; org.eclipse.epp.package.common [4.37.0.20250905-1455,4.37.0.20250905-1455]
+
+[2025-11-17 16:32:56] 
