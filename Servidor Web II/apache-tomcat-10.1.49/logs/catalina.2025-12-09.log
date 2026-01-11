@@ -1,0 +1,52 @@
+09-Dec-2025 08:58:47.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.1.49
+09-Dec-2025 08:58:47.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Nov 6 2025 01:31:11 UTC
+09-Dec-2025 08:58:47.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.1.49.0
+09-Dec-2025 08:58:47.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+09-Dec-2025 08:58:47.190 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+09-Dec-2025 08:58:47.190 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+09-Dec-2025 08:58:47.190 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-25
+09-Dec-2025 08:58:47.190 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       25.0.1+8-LTS-27
+09-Dec-2025 08:58:47.190 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+09-Dec-2025 08:58:47.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49
+09-Dec-2025 08:58:47.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49
+09-Dec-2025 08:58:47.200 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49\conf\logging.properties
+09-Dec-2025 08:58:47.200 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Dec-2025 08:58:47.200 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+09-Dec-2025 08:58:47.201 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-Dec-2025 08:58:47.201 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dsun.io.useCanonCaches=false
+09-Dec-2025 08:58:47.201 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+09-Dec-2025 08:58:47.201 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+09-Dec-2025 08:58:47.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+09-Dec-2025 08:58:47.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+09-Dec-2025 08:58:47.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+09-Dec-2025 08:58:47.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Dec-2025 08:58:47.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49
+09-Dec-2025 08:58:47.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49
+09-Dec-2025 08:58:47.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49\temp
+09-Dec-2025 08:58:47.507 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [2.0.9] con la versión APR [1.7.6].
+09-Dec-2025 08:58:47.515 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.5.0 8 Apr 2025]
+09-Dec-2025 08:58:47.762 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+09-Dec-2025 08:58:47.785 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [782] milliseconds
+09-Dec-2025 08:58:47.846 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+09-Dec-2025 08:58:47.847 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.49]
+09-Dec-2025 08:58:47.879 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49\webapps\ejemploweb.war] de la aplicación web
+09-Dec-2025 08:58:50.407 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Dec-2025 08:58:50.472 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49\webapps\ejemploweb.war] has finished in [2.587] ms
+09-Dec-2025 08:58:50.473 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49\webapps\docs] de la aplicación web
+09-Dec-2025 08:58:50.511 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49\webapps\docs] has finished in [39] ms
+09-Dec-2025 08:58:50.512 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49\webapps\examples] de la aplicación web
+09-Dec-2025 08:58:51.214 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49\webapps\examples] has finished in [702] ms
+09-Dec-2025 08:58:51.215 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49\webapps\host-manager] de la aplicación web
+09-Dec-2025 08:58:51.258 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49\webapps\host-manager] has finished in [44] ms
+09-Dec-2025 08:58:51.259 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49\webapps\manager] de la aplicación web
+09-Dec-2025 08:58:51.296 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49\webapps\manager] has finished in [37] ms
+09-Dec-2025 08:58:51.297 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49\webapps\ROOT] de la aplicación web
+09-Dec-2025 08:58:51.327 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\apache-tomcat-10.1.49\webapps\ROOT] has finished in [30] ms
+09-Dec-2025 08:58:51.332 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+09-Dec-2025 08:58:51.365 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3577] milliseconds
+09-Dec-2025 09:14:05.754 INFO [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+09-Dec-2025 09:14:05.757 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+09-Dec-2025 09:14:05.772 INFO [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+09-Dec-2025 09:14:05.796 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+09-Dec-2025 09:14:05.807 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

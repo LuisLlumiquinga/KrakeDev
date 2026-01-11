@@ -16,6 +16,18 @@
     <repository
         url="https://download.eclipse.org/jdt/updates/4.37-P-builds"/>
   </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
+      label="Eclipse IDE Release Updates">
+    <repository
+        url="https://download.eclipse.org/releases/latest"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
+      label="Eclipse IDE Release Updates">
+    <repository
+        url="https://download.eclipse.org/releases/latest"/>
+  </setupTask>
   <productVersion
       href="index:/org.eclipse.setup#//@productCatalogs[name='self']/@products[name='product']/@versions[name='version']"/>
 </setup:Installation>

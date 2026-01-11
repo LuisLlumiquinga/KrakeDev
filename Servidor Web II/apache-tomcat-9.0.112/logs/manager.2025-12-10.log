@@ -1,0 +1,84 @@
+10-Dec-2025 09:03:57.572 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+10-Dec-2025 09:03:57.572 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+10-Dec-2025 09:03:57.589 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+10-Dec-2025 12:32:25.703 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+10-Dec-2025 12:32:25.703 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+10-Dec-2025 12:32:25.717 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+10-Dec-2025 12:33:17.956 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/evaluacionfinal'
+10-Dec-2025 12:33:20.338 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log HTMLManager: Error starting [/evaluacionfinal]
+	org.apache.catalina.LifecycleException: Fallo al iniciar el componente [org.apache.catalina.webresources.JarResourceSet@288f4cb9]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:404)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:125)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:155)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:733)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4160)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4282)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1306)
+		at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:640)
+		at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:186)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:197)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+		at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:431)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:596)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:352)
+		at org.apache.catalina.valves.RemoteCIDRValve.invoke(RemoteCIDRValve.java:138)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+	Caused by: java.lang.IllegalArgumentException: java.io.IOException: java.lang.reflect.InvocationTargetException
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:141)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		... 41 more
+	Caused by: java.io.IOException: java.lang.reflect.InvocationTargetException
+		at org.apache.tomcat.util.compat.Jre9Compat.jarFileNewInstance(Jre9Compat.java:208)
+		at org.apache.tomcat.util.compat.Jre12Compat.jarFileNewInstance(Jre12Compat.java:33)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:324)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:138)
+		... 42 more
+	Caused by: java.lang.reflect.InvocationTargetException
+		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+		at org.apache.tomcat.util.compat.Jre9Compat.jarFileNewInstance(Jre9Compat.java:206)
+		... 45 more
+	Caused by: java.util.zip.ZipException: zip file is empty
+		at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1831)
+		at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1609)
+		at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1701)
+		at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1542)
+		at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1506)
+		at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:704)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:204)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:150)
+		at java.base/java.util.jar.JarFile.<init>(JarFile.java:333)
+		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+		... 48 more
+10-Dec-2025 12:33:20.338 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+10-Dec-2025 12:52:09.176 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+10-Dec-2025 12:52:09.176 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+10-Dec-2025 12:52:15.342 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'

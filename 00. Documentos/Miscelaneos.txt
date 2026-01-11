@@ -50,3 +50,14 @@ git pull origin main --> actualiza desde la nube
 *** arreglo vacio ***
 	let hola=[]
 	hola.push();
+
+proyecto JAVA
+java11-junit5
+
+proyecto MAVEN
+webapp javaee8
+
+IMPORTS
+LOGGER --> org.apache.logging.log4j.Logger
+
+--> en el archivo web.xml ver modificaciones

@@ -1,0 +1,246 @@
+10-12-2025 09:16:52.060 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 09:17:33.700 [main] ERROR com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Error al conectarse, revise usuario y clave
+org.postgresql.util.PSQLException: FATAL: la autentificación password falló para el usuario «postgres»
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:778)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:234)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:279)
+	at org.postgresql.Driver.makeConnection(Driver.java:448)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD.conectar(ConexionBDD.java:21)
+	at com.krakedev.moduloii.evaluacionfinal.test.TestConexionBDD.main(TestConexionBDD.java:9)
+10-12-2025 09:19:17.543 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:03:30.275 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:03:30.482 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:03:30.564 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:03:30.576 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Libro a insertar>>>Libro [id_libro=15, titulo=Prueba, autor_id=1, genero_id=1, anio_publicacion=2025, estado_disponible=true]
+10-12-2025 10:03:30.646 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:03:30.697 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Libro agregado
+10-12-2025 10:03:30.699 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 10:03:30.709 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 10:03:30.710 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 10:03:30.710 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 10:03:30.710 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 10:03:30.785 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:03:30.791 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo libro agregado
+10-12-2025 10:03:30.792 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Libro a actualizar>>>Libro [id_libro=13, titulo=Nueva Modificacion, autor_id=4, genero_id=4, anio_publicacion=1989, estado_disponible=false]
+10-12-2025 10:03:30.877 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:03:30.913 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Libro actualizada
+10-12-2025 10:03:30.914 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 1989/12/23
+10-12-2025 10:03:30.914 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Sat Dec 23 00:00:00 ECT 1989
+10-12-2025 10:03:30.914 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 1990/12/23
+10-12-2025 10:03:30.914 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Sun Dec 23 00:00:00 ECT 1990
+10-12-2025 10:03:30.914 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a actualizar>>>Prestamo [id_prestamo=12, libro_id=5, nombre_usuario=Usuario Modificado, fecha_prestamo=Sat Dec 23 00:00:00 ECT 1989, fecha_devolucion=Sun Dec 23 00:00:00 ECT 1990]
+10-12-2025 10:03:30.992 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:03:30.996 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo actualizado
+10-12-2025 10:03:43.585 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:03:43.691 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:03:43.789 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:03:43.802 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Libro a insertar>>>Libro [id_libro=15, titulo=Prueba, autor_id=1, genero_id=1, anio_publicacion=2025, estado_disponible=true]
+10-12-2025 10:03:43.875 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:03:43.976 [main] ERROR com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Error al insertar
+org.postgresql.util.PSQLException: ERROR: llave duplicada viola restricción de unicidad «unique_libro»
+  Detail: Ya existe la llave (titulo, autor_id, genero_id, anio_publicacion, estado_disponible)=(Prueba, 1, 1, 2025, t).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2736)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2421)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:525)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:435)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:157)
+	at com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca.insertarLibro(ServiciosBiblioteca.java:211)
+	at com.krakedev.moduloii.evaluacionfinal.test.TestPrueba.main(TestPrueba.java:25)
+10-12-2025 10:23:03.790 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 10:23:03.802 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 10:23:03.803 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 10:23:03.803 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 10:23:03.804 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 10:23:04.110 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:23:04.178 [main] ERROR com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Error al insertar
+org.postgresql.util.PSQLException: ERROR: no existe la columna «id»
+  Position: 51
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2736)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2421)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:525)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:435)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:157)
+	at com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca.registrarPrestamo(ServiciosBiblioteca.java:311)
+	at com.krakedev.moduloii.evaluacionfinal.test.TestGrupo.main(TestGrupo.java:19)
+10-12-2025 10:23:44.542 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 10:23:44.554 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 10:23:44.554 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 10:23:44.554 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 10:23:44.555 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 10:23:44.829 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:23:44.886 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo libro agregado y estado actualizado
+10-12-2025 10:23:51.746 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 10:23:51.758 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 10:23:51.758 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 10:23:51.759 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 10:23:51.760 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 10:23:52.043 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:23:52.100 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo libro agregado y estado actualizado
+10-12-2025 10:27:04.648 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 10:27:04.661 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 10:27:04.661 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 10:27:04.661 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 10:27:04.663 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 10:27:04.947 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:27:05.003 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo libro agregado y estado actualizado
+10-12-2025 10:46:29.326 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 10:46:29.340 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 10:46:29.340 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 10:46:29.340 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 10:46:29.342 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 10:46:29.621 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:46:29.633 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo libro agregado y estado actualizado
+10-12-2025 10:46:29.722 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:46:29.741 [main] ERROR com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Error al recuperar los prestamos
+org.postgresql.util.PSQLException: ERROR: no existe la columna «id_libro»
+  Position: 31
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2736)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2421)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:525)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:435)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:139)
+	at com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca.consultarPrestamos(ServiciosBiblioteca.java:266)
+	at com.krakedev.moduloii.evaluacionfinal.test.TestGrupo.main(TestGrupo.java:27)
+10-12-2025 10:46:55.220 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 10:46:55.232 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 10:46:55.232 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 10:46:55.233 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 10:46:55.234 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 10:46:55.633 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:46:55.693 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo libro agregado y estado actualizado
+10-12-2025 10:46:55.789 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:48:31.200 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 10:48:31.213 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 10:48:31.213 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 10:48:31.213 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 10:48:31.214 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 10:48:31.496 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:48:31.549 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo libro agregado y estado actualizado
+10-12-2025 10:48:31.635 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:51:10.168 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 10:51:10.181 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 10:51:10.181 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 10:51:10.181 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 10:51:10.182 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 10:51:10.486 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:51:10.506 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo libro agregado y estado actualizado
+10-12-2025 10:51:10.586 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:51:23.877 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 10:51:23.889 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 10:51:23.889 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 10:51:23.889 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 10:51:23.891 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 10:51:24.180 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:51:24.202 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo libro agregado y estado actualizado
+10-12-2025 10:51:24.288 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:54:24.515 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 10:54:24.527 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 10:54:24.527 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 10:54:24.527 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 10:54:24.529 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 10:54:24.805 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:54:24.861 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo libro agregado y estado actualizado
+10-12-2025 10:54:24.936 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:55:23.666 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 10:55:23.678 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 10:55:23.678 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 10:55:23.678 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 10:55:23.679 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 10:55:23.942 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:55:23.956 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo libro agregado y estado actualizado
+10-12-2025 10:55:24.039 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:55:52.248 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 10:55:52.265 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 10:55:52.265 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 10:55:52.265 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 10:55:52.266 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 10:55:52.577 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 10:55:52.631 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo libro agregado y estado actualizado
+10-12-2025 10:55:52.701 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 11:06:24.765 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 11:06:24.776 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 11:06:24.776 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 11:06:24.777 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 11:06:24.778 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 11:06:25.032 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 11:06:25.045 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo libro agregado y estado actualizado
+10-12-2025 11:06:25.118 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 11:06:25.129 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Genero a eliminar a eliminar con codigo >>>1
+10-12-2025 11:06:25.182 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 11:06:25.198 [main] ERROR com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Error al eliminar
+org.postgresql.util.PSQLException: ERROR: update o delete en «generos» viola la llave foránea «generos_fk» en la tabla «libros»
+  Detail: La llave (id_genero)=(1) todavía es referida desde la tabla «libros».
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2736)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2421)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:525)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:435)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:157)
+	at com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca.eliminarGenero(ServiciosBiblioteca.java:264)
+	at com.krakedev.moduloii.evaluacionfinal.test.TestGrupo.main(TestGrupo.java:40)
+10-12-2025 11:07:38.253 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 11:07:38.266 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 11:07:38.266 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 11:07:38.266 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 11:07:38.268 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 11:07:38.512 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 11:07:38.533 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo libro agregado y estado actualizado
+10-12-2025 11:07:38.593 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 11:07:38.605 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Genero a eliminar a eliminar con codigo >>>1
+10-12-2025 11:07:38.656 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 11:07:38.673 [main] ERROR com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Error al eliminar contiene relacion con otra tabla
+org.postgresql.util.PSQLException: ERROR: update o delete en «generos» viola la llave foránea «generos_fk» en la tabla «libros»
+  Detail: La llave (id_genero)=(1) todavía es referida desde la tabla «libros».
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2736)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2421)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:525)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:435)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:157)
+	at com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca.eliminarGenero(ServiciosBiblioteca.java:264)
+	at com.krakedev.moduloii.evaluacionfinal.test.TestGrupo.main(TestGrupo.java:40)
+10-12-2025 11:07:45.819 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 11:07:45.832 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 11:07:45.832 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 11:07:45.833 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 11:07:45.837 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 11:07:46.098 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 11:07:46.124 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo libro agregado y estado actualizado
+10-12-2025 11:07:46.199 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 11:07:46.210 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Genero a eliminar a eliminar con codigo >>>10
+10-12-2025 11:07:46.249 [main] DEBUG com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD - Conexion exitosa
+10-12-2025 11:07:46.251 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Genero eliminada
+10-12-2025 12:39:12.503 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2020/12/23
+10-12-2025 12:39:12.516 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Wed Dec 23 00:00:00 ECT 2020
+10-12-2025 12:39:12.517 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Convirtiendo fecha 2022/12/23
+10-12-2025 12:39:12.517 [main] TRACE com.krakedev.moduloii.evaluacionfinal.utils.Convertidor - Fecha convertida Fri Dec 23 00:00:00 ECT 2022
+10-12-2025 12:39:12.548 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Prestamo a insertar>>>Prestamo [id_prestamo=15, libro_id=10, nombre_usuario=Karla Mendez, fecha_prestamo=Wed Dec 23 00:00:00 ECT 2020, fecha_devolucion=Fri Dec 23 00:00:00 ECT 2022]
+10-12-2025 12:39:12.577 [main] ERROR com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Error al insertar
+java.lang.Exception: Error de conexion
+	at com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD.conectar(ConexionBDD.java:24)
+	at com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca.registrarPrestamo(ServiciosBiblioteca.java:372)
+	at com.krakedev.moduloii.evaluacionfinal.test.TestGrupo.main(TestGrupo.java:21)
+10-12-2025 12:39:12.579 [main] ERROR com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Error al recuperar los prestamos
+java.lang.Exception: Error de conexion
+	at com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD.conectar(ConexionBDD.java:24)
+	at com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca.consultarPrestamos(ServiciosBiblioteca.java:288)
+	at com.krakedev.moduloii.evaluacionfinal.test.TestGrupo.main(TestGrupo.java:27)
+10-12-2025 12:39:12.579 [main] TRACE com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Genero a eliminar a eliminar con codigo >>>10
+10-12-2025 12:39:12.579 [main] ERROR com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca - Error al eliminar contiene relacion con otra tabla
+java.lang.Exception: Error de conexion
+	at com.krakedev.moduloii.evaluacionfinal.utils.ConexionBDD.conectar(ConexionBDD.java:24)
+	at com.krakedev.moduloii.evaluacionfinal.servicios.ServiciosBiblioteca.eliminarGenero(ServiciosBiblioteca.java:258)
+	at com.krakedev.moduloii.evaluacionfinal.test.TestGrupo.main(TestGrupo.java:40)

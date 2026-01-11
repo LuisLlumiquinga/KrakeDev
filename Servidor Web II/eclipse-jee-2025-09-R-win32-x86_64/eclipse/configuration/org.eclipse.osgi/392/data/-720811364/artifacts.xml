@@ -2,7 +2,7 @@
 <?artifactRepository version='1.1.0'?>
 <repository name='D:\Documentos\Programacion_Luis\KrakeDev\Servidor Web II\eclipse-jee-2025-09-R-win32-x86_64\eclipse\.eclipseextension' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
   <properties size='3'>
-    <property name='p2.timestamp' value='1763578784938'/>
+    <property name='p2.timestamp' value='1766107176286'/>
     <property name='org.eclipse.update.site.policy' value='USER-EXCLUDE'/>
     <property name='org.eclipse.update.site.list' value=''/>
   </properties>

@@ -24,8 +24,8 @@
   <WatchedResource>WEB-INF/tomcat-web.xml</WatchedResource>
   <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
 
-  <ResourceLink name="jdbc/ConexionPG"
-    global="jdbc/ConexionPG"
+  <ResourceLink name="jdbc/ConexionInventario"
+    global="jdbc/ConexionInventario"
     auth="Container"
     type="javax.sql.DataSource" />
 
