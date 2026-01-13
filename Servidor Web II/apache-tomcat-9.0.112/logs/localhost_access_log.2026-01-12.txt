@@ -14,3 +14,7 @@
 0:0:0:0:0:0:0:1 - - [12/Jan/2026:19:29:54 -0500] "GET /inventarios-1.0.0/rest/proveedores/buscar/da HTTP/1.1" 200 186
 0:0:0:0:0:0:0:1 - - [12/Jan/2026:19:30:46 -0500] "GET /inventarios-1.0.0/rest/proveedores/buscar/da HTTP/1.1" 200 186
 0:0:0:0:0:0:0:1 - - [12/Jan/2026:20:56:44 -0500] "GET /inventarios-1.0.0/rest/productos/buscar/m HTTP/1.1" 404 642
+0:0:0:0:0:0:0:1 - - [12/Jan/2026:20:57:57 -0500] "GET /inventarios-1.0.0/rest/productos/buscar/m HTTP/1.1" 200 513
+0:0:0:0:0:0:0:1 - - [12/Jan/2026:21:21:51 -0500] "POST /inventarios-1.0.0/rest/productos/crear HTTP/1.1" 415 799
+0:0:0:0:0:0:0:1 - - [12/Jan/2026:21:24:40 -0500] "POST /inventarios-1.0.0/rest/productos/crear HTTP/1.1" 415 799
+0:0:0:0:0:0:0:1 - - [12/Jan/2026:21:25:13 -0500] "POST /inventarios-1.0.0/rest/productos/crear HTTP/1.1" 500 720
