@@ -8,7 +8,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.krakedev.inventarios.bdd.ProveedoresBDD;
+import com.krakedev.inventarios.bdd.TipoDocumentosBDD;
 import com.krakedev.inventarios.entidades.TipoDocumentos;
 import com.krakedev.inventarios.excepciones.KrakeDevException;
 
@@ -18,7 +18,7 @@ public class ServiciosTipoDocumentos {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response buscar(){
-		ProveedoresBDD docBDD = new ProveedoresBDD();
+		TipoDocumentosBDD docBDD = new TipoDocumentosBDD();
 		ArrayList<TipoDocumentos> documentos = null;
 
 		try {
