@@ -1,13 +1,17 @@
 package com.krakedev.inventarios.bdd;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import com.krakedev.inventarios.entidades.Categoria;
+import com.krakedev.inventarios.entidades.Producto;
 import com.krakedev.inventarios.entidades.Proveedor;
 import com.krakedev.inventarios.entidades.TipoDocumentos;
+import com.krakedev.inventarios.entidades.UnidadDeMedida;
 import com.krakedev.inventarios.excepciones.KrakeDevException;
 import com.krakedev.inventarios.utils.ConexionBDD;
 
