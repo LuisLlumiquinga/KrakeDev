@@ -78,4 +78,56 @@ public class PedidosBDD {
 			}
 		}
 	}
+	
+	
+	public void recibir(Pedido pedido) throws KrakeDevException {
+		Connection con = null;
+		PreparedStatement ps=null;
+		PreparedStatement psDet=null;
+		ResultSet rsClave=null;
+		int codigoCabecera=0;
+		
+		Date fechaActual=new Date();
+		java.sql.Date fechaSQL=new java.sql.Date(fechaActual.getTime());
+
+		try {
+			con = ConexionBDD.obtenerConexion();
+			ps=con.prepareStatement("update cabecera_pedido set estado='R' where numero=?");
+			ps.setInt(1, pedido.getCodigo());		
+			ps.executeUpdate();
+			
+			ArrayList<DetallePedido> detallesPedido=pedido.getDetalles();
+			DetallePedido det;
+			
+			for(int i=0; i<detallesPedido.size(); i++) {
+				det = detallesPedido.get(i);
+				psDet=con.prepareStatement("update detalle_pedido set cantidad_recibida=?, subtotal=? "
+						+ "where codigo=?");
+				
+				psDet.setInt(1, det.getCantidadRecibida());
+				
+				BigDecimal pv=det.getProducto().getPrecioVenta();
+				BigDecimal cantidad=new BigDecimal(det.getCantidadRecibida());
+				BigDecimal subTotal=pv.multiply(cantidad);
+				
+				psDet.setBigDecimal(2, subTotal);			
+				psDet.setInt(3, det.getCodigo());
+				
+				psDet.executeUpdate();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new KrakeDevException("Error al actualizar el pedido. Detalle: "+e.getMessage());
+		} catch (KrakeDevException e) {
+			throw e;
+		} finally {
+			if (con != null) {
+				try {
+					con.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
 }
