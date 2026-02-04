@@ -44,4 +44,33 @@ public class TipoDocumentosBDD {
 		
 		return tipoDocumentos;
 	}
+	
+	public void crearTD(TipoDocumentos documento) throws KrakeDevException {
+		Connection con = null;
+
+		try {
+			con = ConexionBDD.obtenerConexion();
+			PreparedStatement ps = con.prepareStatement("insert into tipo_documentos(codigo, descripcion) "
+					+ "values(?, ?)");
+
+			ps.setString(1, documento.getCodigo());
+			ps.setString(2, documento.getDescripcion());
+			
+			ps.executeUpdate();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new KrakeDevException("Error al crear un nuevo tipo de documento. Detalle: "+e.getMessage());
+		} catch (KrakeDevException e) {
+			throw e;
+		} finally {
+			if (con != null) {
+				try {
+					con.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
 }

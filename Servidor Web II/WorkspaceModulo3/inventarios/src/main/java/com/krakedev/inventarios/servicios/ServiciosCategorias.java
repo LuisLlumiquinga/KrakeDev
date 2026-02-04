@@ -12,11 +12,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.krakedev.inventarios.bdd.CategoriasBDD;
-import com.krakedev.inventarios.bdd.ProductosBDD;
-import com.krakedev.inventarios.bdd.TipoDocumentosBDD;
 import com.krakedev.inventarios.entidades.Categoria;
-import com.krakedev.inventarios.entidades.Producto;
-import com.krakedev.inventarios.entidades.TipoDocumentos;
 import com.krakedev.inventarios.excepciones.KrakeDevException;
 
 @Path("categorias")
