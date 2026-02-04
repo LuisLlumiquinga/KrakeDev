@@ -29,6 +29,11 @@
     auth="Container"
     type="javax.sql.DataSource" />
 
+  <ResourceLink name="jdbc/ConexionPronostico"
+    global="jdbc/ConexionPronostico"
+    auth="Container"
+    type="javax.sql.DataSource" />
+
   <!-- Uncomment this to disable session persistence across Tomcat restarts -->
   <!--
     <Manager pathname="" />

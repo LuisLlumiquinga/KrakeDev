@@ -55,7 +55,15 @@ proyecto JAVA
 java11-junit5
 
 proyecto MAVEN
-webapp javaee8
+webapp-javaee8		**archivo exportado
+
+proyecto MAVEN ULTIMO
+webapp-j2ee13
+configurar data source (server y context)
+configurar web.xml (servlet y servlet-mapping)
+copiar las dependencias del pom.xml
+
+
 
 IMPORTS
 LOGGER --> org.apache.logging.log4j.Logger

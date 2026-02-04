@@ -54,12 +54,11 @@
                url="jdbc:postgresql://localhost:5432/prueba_final"
                username="postgres"
                password="4189"
-
                maxActive="100"
                maxIdle="20"
                minIdle="5"
                maxWait="10000" />
-          
+
           <Resource name="jdbc/ConexionInventario"
                global="jdbc/ConexionInventario"
                auth="Container"
@@ -68,7 +67,19 @@
                url="jdbc:postgresql://localhost:5432/inventario"
                username="postgres"
                password="4189"
+               maxActive="100"
+               maxIdle="20"
+               minIdle="5"
+               maxWait="10000" />
 
+          <Resource name="jdbc/ConexionPronostico"
+               global="jdbc/ConexionPronostico"
+               auth="Container"
+               type="javax.sql.DataSource"
+               driverClassName="org.postgresql.Driver"
+               url="jdbc:postgresql://localhost:5432/pronosticos"
+               username="postgres"
+               password="4189"
                maxActive="100"
                maxIdle="20"
                minIdle="5"
